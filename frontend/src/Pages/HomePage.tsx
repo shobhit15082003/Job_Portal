@@ -1,4 +1,5 @@
 import Header from "../Header/Header"
+import Comapnies from "../LandingPage/Comapnies"
 import DreamJob from "../LandingPage/DreamJob"
 
 const HomePage = () => {
@@ -9,6 +10,7 @@ const HomePage = () => {
         </div>
       <Header/>
       <DreamJob/>
+      <Comapnies/>
     </div>
   )
 }
