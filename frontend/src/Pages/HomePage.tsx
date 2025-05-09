@@ -1,3 +1,4 @@
+import Footer from "../Footer/Footer"
 import Header from "../Header/Header"
 import Comapnies from "../LandingPage/Comapnies"
 import DreamJob from "../LandingPage/DreamJob"
@@ -19,6 +20,7 @@ const HomePage = () => {
       <Working/>
       <Testimonials/>
       <Subscribe/>
+      <Footer/>
     </div>
   )
 }
