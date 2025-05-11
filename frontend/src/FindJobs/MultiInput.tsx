@@ -1,4 +1,4 @@
-import { Checkbox, CheckIcon, Combobox, Group, Pill, PillsInput, useCombobox } from '@mantine/core';
+import { Checkbox, CheckIcon, Combobox, Group, Input, Pill, PillsInput, useCombobox } from '@mantine/core';
 import { IconSearch } from '@tabler/icons-react';
 import { useState } from 'react';
 
@@ -32,16 +32,18 @@ const MultiInput=()=> {
   const handleValueRemove = (val: string) =>
     setValue((current) => current.filter((v) => v !== val));
 
-  const values = value.map((item) => (
-    <Pill key={item} withRemoveButton onRemove={() => handleValueRemove(item)}>
-      {item}
-    </Pill>
-  ));
+   const values = value
+    .slice(0,1)
+    .map((item) => (
+      <Pill key={item} withRemoveButton onRemove={() => handleValueRemove(item)}>
+        {item}
+      </Pill>
+    ));
 
   const options = data.map((item) => (
     <Combobox.Option value={item} key={item} active={value.includes(item)}>
       <Group gap="sm">
-        <Checkbox
+        <Checkbox size='xs' color='brightSun.4' 
           checked={value.includes(item)}
           onChange={() => {}}
           aria-hidden
@@ -62,22 +64,26 @@ const MultiInput=()=> {
           <IconSearch />
         </div>}
         onClick={() => combobox.openDropdown()}>
-          <Pill.Group>
-            {values}
+          {/* <Pill.Group>
+            {values} */}
+             <Pill.Group>
+            {value.length > 0 ? (
+              <>
+                {values}
+                {value.length > 1 && (
+                  <Pill>+{value.length - 1} more</Pill>
+                )}
+              </>
+            ) : (
+              <Input.Placeholder>Pick one or more values</Input.Placeholder>
+            )}
 
             <Combobox.EventsTarget>
               <PillsInput.Field
-                
-                onFocus={() => combobox.openDropdown()}
+                type="hidden"
                 onBlur={() => combobox.closeDropdown()}
-                value={search}
-                placeholder="Search values"
-                onChange={(event) => {
-                  combobox.updateSelectedOptionIndex();
-                  setSearch(event.currentTarget.value);
-                }}
                 onKeyDown={(event) => {
-                  if (event.key === 'Backspace' && search.length === 0) {
+                  if (event.key === 'Backspace') {
                     event.preventDefault();
                     handleValueRemove(value[value.length - 1]);
                   }
@@ -85,10 +91,17 @@ const MultiInput=()=> {
               />
             </Combobox.EventsTarget>
           </Pill.Group>
+
+          {/* </Pill.Group> */}
         </PillsInput>
       </Combobox.DropdownTarget>
 
       <Combobox.Dropdown>
+          <Combobox.Search
+            value={search}
+            onChange={(event) => setSearch(event.currentTarget.value)}
+            placeholder="Search groceries"
+          />
         <Combobox.Options>
           {options}
 
