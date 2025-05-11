@@ -40,6 +40,7 @@ function App() {
         "#2d2d2d",
       ],
     },
+     fontFamily: "poppins, sans-serif",
   });
   return (
     <MantineProvider defaultColorScheme="dark" theme={theme}>
