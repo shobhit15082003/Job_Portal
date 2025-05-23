@@ -9,7 +9,7 @@ import RecommendTalent from '../TalentProfile/RecommendTalent'
 const TalentProfilePage = () => {
   return (
     <div className="min-h-[90vh] bg-mine-shaft-950 font-['poppins'] p-4">
-        <Divider size="xs"/>
+       
         <Link className='my-4 inline-block' to="/find-talent">
           <Button leftSection={<IconArrowLeft size={20}/>} color='brightSun.4' variant='light' >Back</Button>
         </Link>
