@@ -6,9 +6,12 @@ import {
 } from "@tabler/icons-react";
 import React from "react";
 import { footerLinks } from "../Data/Data";
+import { useLocation } from "react-router-dom";
 
 const Footer = () => {
+    const location =useLocation();
   return (
+    location.pathname!="/signup" && location.pathname!="/login" ?
     <div className="pt-20 pb-5 flex gap-5 justify-around bg-mine-shaft-950 font-['poppins]">
       <div className="w-1/4 flex flex-col gap-4 ">
         <div className="flex gap-1 items-center text-bright-sun-400">
@@ -47,7 +50,7 @@ const Footer = () => {
           ))}
         </div>
       ))}
-    </div>
+    </div>:<></>
   );
 };
 
