@@ -20,6 +20,7 @@ import CompanyPage from "./Pages/CompanyPage";
 import PostedJobPage from "./Pages/PostedJobPage";
 import JobHistoryPage from "./Pages/JobHistoryPage";
 import SignupPage from "./Pages/SignupPage";
+import ProfilePage from "./Pages/ProfilePage";
 
 function AppContent() {
   const location = useLocation();
@@ -41,6 +42,7 @@ function AppContent() {
         <Route path="/job-history" element={<JobHistoryPage />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/login" element={<SignupPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
         <Route path="*" element={<HomePage />} />
       </Routes>
       <Footer />
