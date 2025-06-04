@@ -1,6 +1,7 @@
 import React from 'react'
-import { companyData } from '../Data/Company'
+
 import { Divider } from '@mantine/core';
+import { companyData } from '../../Data/Company';
 
 const AboutComp = () => {
     const company:{[key:string]:any}=companyData;

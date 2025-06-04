@@ -2,7 +2,7 @@ import { ActionIcon, Button, Divider } from "@mantine/core";
 import { IconAdjustments, IconBookmark, IconMapPin } from "@tabler/icons-react";
 import React from "react";
 import { Link } from "react-router-dom";
-import { card, desc, skills } from "../Data/JobDescData";
+import { card, desc, skills } from "../../Data/JobDescData";
 //@ts-ignore
 import DOMPurify from "dompurify";
 
