@@ -9,8 +9,8 @@ import "@mantine/dates/styles.css";
 import HomePage from "./Pages/HomePage";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import FindJobs from "./Pages/FindJobs";
-import Header from "./Header/Header";
-import Footer from "./Footer/Footer";
+
+import Footer from "./Component/Footer/Footer";
 import FindTalentPage from "./Pages/FindTalentPage";
 import TalentProfilePage from "./Pages/TalentProfilePage";
 import PostJobPage from "./Pages/PostJobPage";
@@ -21,6 +21,7 @@ import PostedJobPage from "./Pages/PostedJobPage";
 import JobHistoryPage from "./Pages/JobHistoryPage";
 import SignupPage from "./Pages/SignupPage";
 import ProfilePage from "./Pages/ProfilePage";
+import Header from "./Component/Header/Header";
 
 function AppContent() {
   const location = useLocation();

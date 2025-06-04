@@ -1,11 +1,11 @@
 import React from "react";
-import Boy from "../assests/Boy.png";
+import Boy from "../../assests/Boy.png";
 import { Avatar, TextInput } from "@mantine/core";
 import { IconSearch } from "@tabler/icons-react";
-import avatar1 from '../assests/avatar-7.png';
-import avatar2 from '../assests/avatar-8.png';
-import avatar3 from '../assests/avatar-9.png';
-import GoogleLogo from '../assests/Google.png';
+import avatar1 from '../../assests/avatar-7.png';
+import avatar2 from '../../assests/avatar-8.png';
+import avatar3 from '../../assests/avatar-9.png';
+import GoogleLogo from '../../assests/Google.png';
 
 const DreamJob = () => {
   return (

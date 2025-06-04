@@ -3,8 +3,9 @@ import React, { useState } from 'react'
 
 import { Divider, Input, RangeSlider } from '@mantine/core'
 import MultiInput from '../FindJobs/MultiInput';
-import { searchFields } from '../Data/TalentData';
+
 import { IconUserCircle } from '@tabler/icons-react';
+import { searchFields } from '../../Data/TalentData';
 
 const SearchBar = () => {
   const [value, setValue] = useState<[number, number]>([1, 100]);

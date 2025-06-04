@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SelectInput from "../PostJob/SelectInput";
 import { Button, TextInput } from "@mantine/core";
-import fields from "../Data/Profile";
+import fields from "../../Data/Profile";
 import { MonthPickerInput } from "@mantine/dates";
 
 const CertiInput = (props: any) => {

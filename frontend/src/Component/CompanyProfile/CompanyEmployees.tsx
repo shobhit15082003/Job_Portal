@@ -1,6 +1,7 @@
 import React from 'react'
-import { talents } from '../Data/TalentData'
+
 import TalentCard from '../FindTalent/TalentCard'
+import { talents } from '../../Data/TalentData'
 
 const CompanyEmployees = () => {
   return (

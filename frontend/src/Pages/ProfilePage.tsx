@@ -1,6 +1,6 @@
 import { Divider } from '@mantine/core'
 import React from 'react'
-import Profile from '../Profile/Profile'
+import Profile from '../Component/Profile/Profile'
 
 const ProfilePage = () => {
   return (

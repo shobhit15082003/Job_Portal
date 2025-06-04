@@ -1,6 +1,7 @@
 import React from 'react'
-import { jobList } from '../Data/JobsData'
+
 import JobCard from '../FindJobs/JobCard'
+import { jobList } from '../../Data/JobsData'
 
 const CompnayJobs = () => {
   return (

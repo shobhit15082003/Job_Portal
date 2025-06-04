@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import SearchBar from '../FindJobs/SearchBar'
+import SearchBar from '../Component/FindJobs/SearchBar'
 import { Divider } from '@mantine/core'
-import Jobs from '../FindJobs/Jobs'
+import Jobs from '../Component/FindJobs/Jobs'
 
 const FindJobs = () => {
    

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import JobHistory from "../JobHistory/JobHistory";
+import JobHistory from "../Component/JobHistory/JobHistory";
 
 const JobHistoryPage = () => {
   useEffect(() => {

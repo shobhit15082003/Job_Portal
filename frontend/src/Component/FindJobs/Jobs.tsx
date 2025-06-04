@@ -1,7 +1,8 @@
 import React from "react";
 import Sort from "./Sort";
 import JobCard from "./JobCard";
-import { jobList } from "../Data/JobsData";
+import { jobList } from "../../Data/JobsData";
+
 
 const Jobs = () => {
   return (

@@ -1,6 +1,7 @@
 import React from 'react'
-import { similar } from '../Data/Company'
+
 import CompanyCard from './CompanyCard'
+import { similar } from '../../Data/Company'
 
 const SimilarCompanies = () => {
   return (

@@ -1,7 +1,7 @@
 import { Button, Divider } from '@mantine/core'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import PostJob from '../PostJob/PostJob'
+import PostJob from '../Component/PostJob/PostJob'
 
 const PostJobPage = () => {
   return (

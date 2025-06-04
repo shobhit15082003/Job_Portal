@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import PostJob from '../PostJob/PostJob';
-import PostedJob from '../PostedJob/PostedJob';
-import PostedJobDesc from '../PostedJob/PostedJobDesc';
+import PostJob from '../Component/PostJob/PostJob';
+import PostedJob from '../Component/PostedJob/PostedJob';
+import PostedJobDesc from '../Component/PostedJob/PostedJobDesc';
 
 const PostedJobPage = () => {
   

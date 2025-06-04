@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import avatar from "../assests/avatar-9.png";
+import avatar from "../../assests/avatar-9.png";
 import {
   IconAdjustments,
   IconBriefcase,
@@ -18,8 +18,8 @@ import {
 import ExpCard from "./ExpCard";
 import CertiCard from "./CertiCard";
 import SelectInput from "./SelectInput";
-import fields from "../Data/Profile";
-import { profile } from "../Data/TalentData";
+import fields from "../../Data/Profile";
+import { profile } from "../../Data/TalentData";
 import ExpInput from "./ExpInput";
 import CertiInput from "./CertiInput";
 

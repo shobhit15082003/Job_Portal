@@ -1,6 +1,6 @@
 import { Tabs } from "@mantine/core";
 import React from "react";
-import { jobList } from "../Data/JobsData";
+import { jobList } from "../../Data/JobsData";
 import JobHistoryCard from "./JobHistoryCard";
 
 const JobHistory = () => {

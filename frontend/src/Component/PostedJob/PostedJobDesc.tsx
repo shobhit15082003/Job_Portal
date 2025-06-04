@@ -1,7 +1,7 @@
 import { Badge, Tabs } from "@mantine/core";
 import React from "react";
 import JobDesc from "../JobDesc/JobDesc";
-import { talents } from "../Data/TalentData";
+import { talents } from "../../Data/TalentData";
 import TalentCard from "../FindTalent/TalentCard";
 
 const PostedJobDesc = () => {

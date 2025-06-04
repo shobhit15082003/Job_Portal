@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "../assests/avatar-9.png";
+import avatar from "../../assests/avatar-9.png";
 import { IconBriefcase, IconMapPin } from "@tabler/icons-react";
 import { Button, Divider } from "@mantine/core";
 import ExpCard from "./ExpCard";

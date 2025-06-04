@@ -13,7 +13,7 @@ import {
   IconMoonStars,
   IconLogout2,
 } from "@tabler/icons-react";
-import avatarImage from "../assests/avatar-9.png";
+import avatarImage from "../../assests/avatar-9.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 

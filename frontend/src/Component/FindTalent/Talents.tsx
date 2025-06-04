@@ -1,7 +1,8 @@
 import React from 'react'
 import Sort from '../FindJobs/Sort'
-import { talents } from '../Data/TalentData'
+
 import TalentCard from './TalentCard'
+import { talents } from '../../Data/TalentData'
 
 const Talents = () => {
   return (

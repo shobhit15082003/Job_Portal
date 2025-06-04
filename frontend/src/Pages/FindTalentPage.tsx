@@ -1,7 +1,7 @@
 import { Divider } from '@mantine/core'
 import React from 'react'
-import SearchBar from '../FindTalent/SearchBar'
-import Talents from '../FindTalent/Talents'
+import SearchBar from '../Component/FindTalent/SearchBar'
+import Talents from '../Component/FindTalent/Talents'
 
 
 

@@ -5,8 +5,9 @@ import {
   IconBrandX,
 } from "@tabler/icons-react";
 import React from "react";
-import { footerLinks } from "../Data/Data";
+
 import { useLocation } from "react-router-dom";
+import { footerLinks } from "../../Data/Data";
 
 const Footer = () => {
     const location =useLocation();

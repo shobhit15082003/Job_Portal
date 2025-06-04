@@ -1,5 +1,5 @@
 import React from 'react'
-import { talents } from '../Data/TalentData'
+import { talents } from '../../Data/TalentData'
 import TalentCard from '../FindTalent/TalentCard'
 
 const RecommendTalent = () => {

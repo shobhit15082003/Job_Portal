@@ -1,6 +1,6 @@
 import { Tabs } from "@mantine/core";
 import React from "react";
-import { activeJobs } from "../Data/PostedJob";
+import { activeJobs } from "../../Data/PostedJob";
 import PostedJobCard from "./PostedJobCard";
 
 const PostedJob = () => {

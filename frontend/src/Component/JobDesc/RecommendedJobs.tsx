@@ -1,5 +1,5 @@
 import React from 'react'
-import { jobList } from '../Data/JobsData'
+import { jobList } from '../../Data/JobsData'
 import JobCard from '../FindJobs/JobCard'
 
 const RecommendedJobs = () => {

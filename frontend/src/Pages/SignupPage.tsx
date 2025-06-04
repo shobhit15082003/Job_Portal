@@ -1,7 +1,7 @@
 import { IconAnchor } from "@tabler/icons-react";
 import React from "react";
-import Signup from "../SignUpLogin/Signup";
-import Login from "../SignUpLogin/Login";
+import Signup from "../Component/SignUpLogin/Signup";
+import Login from "../Component/SignUpLogin/Login";
 import { useLocation } from "react-router-dom";
 
 const SignupPage = () => {

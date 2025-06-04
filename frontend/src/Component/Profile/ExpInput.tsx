@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SelectInput from "./SelectInput";
-import fields from "../Data/Profile";
+import fields from "../../Data/Profile";
 import { Button, Checkbox, Textarea } from "@mantine/core";
 import { MonthPickerInput } from "@mantine/dates";
 

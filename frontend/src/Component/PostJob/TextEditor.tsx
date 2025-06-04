@@ -6,7 +6,7 @@ import Underline from '@tiptap/extension-underline';
 import TextAlign from '@tiptap/extension-text-align';
 import Superscript from '@tiptap/extension-superscript';
 import SubScript from '@tiptap/extension-subscript';
-import { content } from '../Data/PostJob';
+import { content } from '../../Data/PostJob';
 
 
 const TextEditor=()=> {

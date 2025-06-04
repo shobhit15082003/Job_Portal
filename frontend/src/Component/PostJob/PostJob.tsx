@@ -1,6 +1,6 @@
 import React from 'react'
 import SelectInput from './SelectInput'
-import { fields } from '../Data/PostJob'
+import { fields } from '../../Data/PostJob'
 import { Button, TagsInput } from '@mantine/core';
 import TextEditor from './TextEditor';
 import { IconArrowLeft } from '@tabler/icons-react';
