@@ -13,14 +13,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserDTO {
-    private String  id;
+    private Long  id;
     @NotBlank(message = "{user.name.absent}")
     private String  name;
     @NotBlank(message = "{user.email.absent}")
     @Email(message = "{user.email.invalid}")
     private String  email;
     @NotBlank(message = "{user.password.absent}")
-    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[\\W_])[A-Za-z\\d\\W_]{8,15}$\n", message = "{user.password.invalid}")
+    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[\\W_])[A-Za-z\\d\\W_]{8,15}$", message = "{user.password.invalid}")
     private String password;
     private AccountType accountType;
 
