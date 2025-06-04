@@ -19,7 +19,7 @@ const Login = () => {
       .then((res) => {
         console.log(res);
       })
-      .catch((err) => console.log(err.response.data));
+      .catch((err) => console.log(err.response.data)); 
   };
   return (
     <div className="w-1/2 px-20 flex flex-col justify-center gap-3 ">
