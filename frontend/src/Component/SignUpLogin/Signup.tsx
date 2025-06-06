@@ -8,11 +8,12 @@ import {
   rem,
   TextInput,
 } from "@mantine/core";
-import { IconAt, IconLock } from "@tabler/icons-react";
+import { IconAt, IconCheck, IconLock, IconX } from "@tabler/icons-react";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { registerUser } from "../../Services/UserService";
 import { signupValidation } from "../../Services/FormValidation";
+import { notifications } from "@mantine/notifications";
 
 const form = {
   name: "",
@@ -21,7 +22,9 @@ const form = {
   confirmPassword: "",
   accountType: "APPLICANT",
 };
+
 const Signup = () => {
+  const navigate=useNavigate();
   const [data, setData] = useState<{ [key: string]: string }>(form);
   const [formError, setFormError] = useState<{ [key: string]: string }>(form);
   const handleChange = (event: any) => {
@@ -54,6 +57,7 @@ const Signup = () => {
     }
   };
   const handleSubmit = () => {
+    
     let valid = true,
       newFormError: { [key: string]: string } = {};
     for (let key in data) {
@@ -65,12 +69,37 @@ const Signup = () => {
       if (newFormError[key]) valid = false;
     }
     setFormError(newFormError);
+
     if (valid === true) {
       registerUser(data)
         .then((res) => {
           console.log(res);
+          setData(form);
+          notifications.show({
+            title: "Registered Successfully",
+            message: "Redirecting to Login page...",
+            withCloseButton: true,
+            icon: <IconCheck style={{ width: "90%", height: "90%" }} />,
+            color: "teal",
+            withBorder: true,
+            className: "!border-green-500",
+          });
+          setTimeout(()=>{
+            navigate("/login");
+          },4000)
         })
-        .catch((err) => console.log(err));
+        .catch((err) => {
+          console.log(err)
+          notifications.show({
+            title: "Registered Failed",
+            message: err.response.data.errorMessage,
+            withCloseButton: true,
+            icon: <IconX style={{ width: "90%", height: "90%" }} />,
+            color: "red",
+            withBorder: true,
+            className: "!border-red-500",
+          });
+        });
     }
   };
   return (
@@ -150,9 +179,9 @@ const Signup = () => {
       </Button>
       <div className="mx-auto">
         Have an account?{" "}
-        <Link to="/login" className="text-bright-sun-400 hover:underline">
+        <span onClick={()=>{navigate("/login"); setData(form); setFormError(form);}} className="text-bright-sun-400 hover:underline cursor-pointer">
           Login
-        </Link>
+        </span>
       </div>
     </div>
   );

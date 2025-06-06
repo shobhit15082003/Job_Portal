@@ -6,6 +6,7 @@ import "@mantine/core/styles.css";
 import "@mantine/carousel/styles.css";
 import "@mantine/tiptap/styles.css";
 import "@mantine/dates/styles.css";
+import '@mantine/notifications/styles.css';
 import HomePage from "./Pages/HomePage";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import FindJobs from "./Pages/FindJobs";
@@ -22,6 +23,7 @@ import JobHistoryPage from "./Pages/JobHistoryPage";
 import SignupPage from "./Pages/SignupPage";
 import ProfilePage from "./Pages/ProfilePage";
 import Header from "./Component/Header/Header";
+import { Notifications } from "@mantine/notifications";
 
 function AppContent() {
   const location = useLocation();
@@ -88,6 +90,7 @@ function App() {
 
   return (
     <MantineProvider defaultColorScheme="dark" theme={theme}>
+      <Notifications position="top-center" zIndex={1000}/>
       <BrowserRouter>
         <AppContent />
       </BrowserRouter>
