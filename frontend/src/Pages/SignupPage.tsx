@@ -10,7 +10,7 @@ const SignupPage = () => {
   const navigate =useNavigate();
   return (
     <div className="min-h-[90vh] bg-mine-shaft-950 font-['poppins'] overflow-hidden relative">
-      <Button size="sm" className="!absolute left-5" onClick={()=>navigate("/")} my="lg" color="brightSun.4" leftSection=<IconArrowLeft size={20}/> variant="light">
+      <Button size="sm" className="!absolute left-5 z-10" onClick={()=>navigate("/")} my="lg" color="brightSun.4" leftSection=<IconArrowLeft size={20}/> variant="light">
         Home
       </Button>
       <div className={`w-[100vw] h-[100vh] transition-all duration-1000 ease-in-out flex [&>*]:flex-shrink-0 ${location.pathname=="/signup"?"-translate-x-1/2":"translate-x-0"}`}>

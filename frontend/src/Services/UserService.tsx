@@ -17,4 +17,28 @@ const loginUser=async(login:any)=>{
     });
 }
 
-export {registerUser, loginUser};
+const sendOTP=async(email:any)=>{
+    return axios.post(`${base_url}sendOtp`,email)
+    .then(res=>res.data)
+    .catch(error=>{
+        throw error;
+    });
+}
+
+const verifyOtp=async(email:any,otp:any)=>{
+    return axios.get(`${base_url}sendOtp/${email}/${otp}`)
+    .then(res=>res.data)
+    .catch(error=>{
+        throw error;
+    });
+}
+
+const changePass=async(email:String,password:String)=>{
+    return axios.post(`${base_url}changePass`,{email,password})
+    .then(res=>res.data)
+    .catch(error=>{
+        throw error;
+    });
+}
+
+export {registerUser, loginUser, sendOTP, verifyOtp, changePass};
