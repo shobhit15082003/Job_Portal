@@ -18,7 +18,7 @@ const loginUser=async(login:any)=>{
 }
 
 const sendOTP=async(email:any)=>{
-    return axios.post(`${base_url}sendOtp`,email)
+    return axios.post(`${base_url}sendOTP/${email}`)
     .then(res=>res.data)
     .catch(error=>{
         throw error;
@@ -26,7 +26,7 @@ const sendOTP=async(email:any)=>{
 }
 
 const verifyOtp=async(email:any,otp:any)=>{
-    return axios.get(`${base_url}sendOtp/${email}/${otp}`)
+    return axios.get(`${base_url}verifyOtp/${email}/${otp}`)
     .then(res=>res.data)
     .catch(error=>{
         throw error;
