@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import avatar from "../../assests/avatar-9.png";
 import {
   IconAdjustments,
@@ -22,8 +22,12 @@ import fields from "../../Data/Profile";
 import { profile } from "../../Data/TalentData";
 import ExpInput from "./ExpInput";
 import CertiInput from "./CertiInput";
+import { useSelector } from "react-redux";
+import { getProfile } from "../../Services/ProfileService";
 
 const Profile = (props: any) => {
+  const user = useSelector((state: any) => state.user);
+  const profile =useSelector((state:any)=>state.profile);
   const notFromVideo = profile;
   const select = fields;
   const [edit, setEdit] = useState([false, false, false, false, false]);
@@ -36,7 +40,15 @@ const Profile = (props: any) => {
     newEdit[index] = !newEdit[index];
     setEdit(newEdit);
   };
-
+  useEffect(() => {
+    getProfile(user.id)
+      .then((data: any) => {
+        console.log(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
   return (
     <div className="w-4/5 mx-auto">
       <div className="relative">
@@ -182,7 +194,7 @@ const Profile = (props: any) => {
           </div>
         </div>
         <div className="flex flex-col gap-8">
-          {notFromVideo.experience.map((exp: any, index: any) => (
+          {notFromVideo?.experience?.map((exp: any, index: any) => (
             <ExpCard {...exp} key={index} edit={edit[3]} />
           ))}
           {addExp && <ExpInput add setEdit={setAddExp} />}
@@ -217,7 +229,7 @@ const Profile = (props: any) => {
           </div>
         </div>
         <div className="flex flex-col gap-8">
-          {notFromVideo.certifications.map((certificate: any, index: any) => (
+          {notFromVideo?.certifications?.map((certificate: any, index: any) => (
             <CertiCard {...certificate} key={index} edit={edit[4]} />
           ))}
           {addCerti && <CertiInput setEdit={setAddCerti} />}
