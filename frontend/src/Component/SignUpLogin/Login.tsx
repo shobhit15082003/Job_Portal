@@ -1,4 +1,10 @@
-import { Button, PasswordInput, rem, TextInput } from "@mantine/core";
+import {
+  Button,
+  LoadingOverlay,
+  PasswordInput,
+  rem,
+  TextInput,
+} from "@mantine/core";
 import { IconAt, IconCheck, IconLock, IconX } from "@tabler/icons-react";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -7,6 +13,8 @@ import { loginValidation } from "../../Services/FormValidation";
 import { notifications } from "@mantine/notifications";
 import { useDisclosure } from "@mantine/hooks";
 import ResetPasword from "./ResetPasword";
+import { useDispatch } from "react-redux";
+import { setUser } from "../../Slices/UserSlice";
 
 const form = {
   email: "",
@@ -14,15 +22,18 @@ const form = {
 };
 
 const Login = () => {
+  const [loading, setLoading] = useState(false);
+  const dispatch = useDispatch();
   const [data, setData] = useState(form);
-  const [opened,{open,close}]=useDisclosure(false);
+  const [opened, { open, close }] = useDisclosure(false);
   const [formError, setFormError] = useState<{ [key: string]: string }>(form);
   const navigate = useNavigate();
   const handleChange = (event: any) => {
-    setFormError({...formError, [event.target.name]:""});
+    setFormError({ ...formError, [event.target.name]: "" });
     setData({ ...data, [event.target.name]: event.target.value });
   };
   const handleSubmit = () => {
+    
     let valid = true,
       newFormError: { [key: string]: string } = {};
     // for (let key in data) {
@@ -35,6 +46,7 @@ const Login = () => {
     }
     setFormError(newFormError);
     if (valid) {
+      setLoading(true);
       loginUser(data)
         .then((res) => {
           console.log(res);
@@ -48,10 +60,13 @@ const Login = () => {
             className: "!border-green-500",
           });
           setTimeout(() => {
+            setLoading(false);
+            dispatch(setUser(res));
             navigate("/");
           }, 4000);
         })
         .catch((err) => {
+          setLoading(false);
           console.log(err);
           notifications.show({
             title: "Login Failed",
@@ -67,40 +82,63 @@ const Login = () => {
   };
   return (
     <>
-    <div className="w-1/2 px-20 flex flex-col justify-center gap-3 ">
-      <div className="text-2xl font-semibold ">Create Account</div>
-      <TextInput
-        value={data.email}
-        onChange={handleChange}
-        name="email"
-        leftSection={<IconAt style={{ width: rem(16), height: rem(16) }} />}
-        label="Email"
-        placeholder="Your email"
-        withAsterisk
-        error={formError.email}
+      <LoadingOverlay
+        visible={loading}
+        zIndex={1000}
+        overlayProps={{ radius: "sm", blur: 2 }}
+        loaderProps={{ color: "brightSun.4", type: "bars" }}
       />
-      <PasswordInput
-        value={data.password}
-        onChange={handleChange}
-        name="password"
-        withAsterisk
-        leftSection={<IconLock size={18} stroke={1.5} />}
-        label="Password"
-        placeholder="Password"
-        error={formError.password}
-      />{" "}
-      <Button autoContrast variant="filled" onClick={handleSubmit}>
-        Sign up
-      </Button>
-      <div className="mx-auto">
-        Don't have an account?
-        <span onClick={()=>{navigate("/signup"); setData(form); setFormError(form);}} className="text-bright-sun-400 hover:underline cursor-pointer">
-          SignUp
-        </span>
+      <div className="w-1/2 px-20 flex flex-col justify-center gap-3 ">
+        <div className="text-2xl font-semibold ">Create Account</div>
+        <TextInput
+          value={data.email}
+          onChange={handleChange}
+          name="email"
+          leftSection={<IconAt style={{ width: rem(16), height: rem(16) }} />}
+          label="Email"
+          placeholder="Your email"
+          withAsterisk
+          error={formError.email}
+        />
+        <PasswordInput
+          value={data.password}
+          onChange={handleChange}
+          name="password"
+          withAsterisk
+          leftSection={<IconLock size={18} stroke={1.5} />}
+          label="Password"
+          placeholder="Password"
+          error={formError.password}
+        />{" "}
+        <Button
+          loading={loading}
+          autoContrast
+          variant="filled"
+          onClick={handleSubmit}
+        >
+          Sign up
+        </Button>
+        <div className="mx-auto">
+          Don't have an account?
+          <span
+            onClick={() => {
+              navigate("/signup");
+              setData(form);
+              setFormError(form);
+            }}
+            className="text-bright-sun-400 hover:underline cursor-pointer"
+          >
+            SignUp
+          </span>
+        </div>
+        <div
+          onClick={open}
+          className="text-bright-sun-400 hover:underline cursor-pointer text-center "
+        >
+          Forget Password?
+        </div>
       </div>
-      <div onClick={open} className="text-bright-sun-400 hover:underline cursor-pointer text-center ">Forget Password?</div>
-    </div>
-    <ResetPasword opened={opened} close={close}/>
+      <ResetPasword opened={opened} close={close} />
     </>
   );
 };

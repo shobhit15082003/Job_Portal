@@ -6,9 +6,9 @@ import "@mantine/core/styles.css";
 import "@mantine/carousel/styles.css";
 import "@mantine/tiptap/styles.css";
 import "@mantine/dates/styles.css";
-import '@mantine/notifications/styles.css';
+import "@mantine/notifications/styles.css";
 import HomePage from "./Pages/HomePage";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
 import FindJobs from "./Pages/FindJobs";
 
 import Footer from "./Component/Footer/Footer";
@@ -24,11 +24,15 @@ import SignupPage from "./Pages/SignupPage";
 import ProfilePage from "./Pages/ProfilePage";
 import Header from "./Component/Header/Header";
 import { Notifications } from "@mantine/notifications";
+import { Provider, useSelector } from "react-redux";
+import Store from "./Store";
+import { getItem } from "./Services/LocalStorage";
 
 function AppContent() {
   const location = useLocation();
-  const isSignupPage = location.pathname === "/signup" || location.pathname === "/login" ;
-
+  const isSignupPage =
+    location.pathname === "/signup" || location.pathname === "/login";
+  const user=useSelector((state:any)=>state.user);
   return (
     <div className="relative">
       <Header />
@@ -43,8 +47,8 @@ function AppContent() {
         <Route path="/company" element={<CompanyPage />} />
         <Route path="/posted-job" element={<PostedJobPage />} />
         <Route path="/job-history" element={<JobHistoryPage />} />
-        <Route path="/signup" element={<SignupPage />} />
-        <Route path="/login" element={<SignupPage />} />
+        <Route path="/signup" element={ user?<Navigate to="/" />: <SignupPage />} />
+        <Route path="/login" element={ user?<Navigate to="/" />: <SignupPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="*" element={<HomePage />} />
       </Routes>
@@ -89,12 +93,14 @@ function App() {
   });
 
   return (
-    <MantineProvider defaultColorScheme="dark" theme={theme}>
-      <Notifications position="top-center" zIndex={1000}/>
-      <BrowserRouter>
-        <AppContent />
-      </BrowserRouter>
-    </MantineProvider>
+    <Provider store={Store}>
+      <MantineProvider defaultColorScheme="dark" theme={theme}>
+        <Notifications position="top-center" zIndex={1000} />
+        <BrowserRouter>
+          <AppContent />
+        </BrowserRouter>
+      </MantineProvider>
+    </Provider>
   );
 }
 
