@@ -3,9 +3,11 @@ import fields from "../../Data/Profile";
 import { ActionIcon } from "@mantine/core";
 import {
   IconBriefcase,
+  IconCheck,
   IconDeviceFloppy,
   IconMapPin,
   IconPencil,
+  IconX,
 } from "@tabler/icons-react";
 import SelectInput from "./SelectInput";
 import { hasLength, isEmail, useForm } from "@mantine/form";
@@ -15,45 +17,64 @@ import { successNotification } from "../../Services/NotificationService";
 
 const Info = () => {
   const select = fields;
-  const dispatch =useDispatch();
-  const user=useSelector((state:any)=>state.user);
-  const profile=useSelector((state:any)=>state.profile);
+  const dispatch = useDispatch();
+  const user = useSelector((state: any) => state.user);
+  const profile = useSelector((state: any) => state.profile);
   const [edit, setEdit] = useState(false);
   const handleClick = () => {
-    if(!edit){
-        setEdit(true);
-        form.setValues({jobTitle:profile.jobTitle,company:profile.company,location:profile.location});
-    }
-    else{
-        setEdit(false);
-        let updatedProfile={...profile,...form.getValues()};
-        dispatch(changeProfile(updatedProfile));
-        console.log(updatedProfile);
-        successNotification("Success","Profile Updated Successfully.");
+    if (!edit) {
+      setEdit(true);
+      form.setValues({
+        jobTitle: profile.jobTitle,
+        company: profile.company,
+        location: profile.location,
+      });
+    } else {
+      setEdit(false);
     }
   };
 
   const form = useForm({
     mode: "controlled",
-    initialValues: { jobTitle: "", company: "", location:"" },
+    initialValues: { jobTitle: "", company: "", location: "" },
   });
+
+  const handleSave=()=>{
+    setEdit(false);
+      let updatedProfile = { ...profile, ...form.getValues() };
+      dispatch(changeProfile(updatedProfile));
+      console.log(updatedProfile);
+      successNotification("Success", "Profile Updated Successfully.");
+  }
 
   return (
     <>
       <div className="text-3xl font-semibold flex justify-between ">
         {user.name}
-        <ActionIcon
-          onClick={handleClick}
-          variant="subtle"
-          color="brightSun.4"
-          size="lg"
-        >
-          {edit ? (
-            <IconDeviceFloppy className="h-4/5 w-4/5" />
-          ) : (
-            <IconPencil className="h-4/5 w-4/5" />
-          )}
-        </ActionIcon>
+        <div>
+          {edit && <ActionIcon
+            onClick={handleSave}
+            variant="subtle"
+            color={edit?"green.8":"brightSun.4"}
+            size="lg"
+          >
+            
+              <IconCheck className="h-4/5 w-4/5" />
+        
+          </ActionIcon>}
+          <ActionIcon
+            onClick={handleClick}
+            variant="subtle"
+            color={edit?"red.8":"brightSun.4"}
+            size="lg"
+          >
+            {edit ? (
+              <IconX className="h-4/5 w-4/5" />
+            ) : (
+              <IconPencil className="h-4/5 w-4/5" />
+            )}
+          </ActionIcon>
+        </div>
       </div>
       {edit ? (
         <>

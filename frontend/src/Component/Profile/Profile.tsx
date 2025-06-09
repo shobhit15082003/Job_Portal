@@ -26,6 +26,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getProfile } from "../../Services/ProfileService";
 import Info from "./Info";
 import { setProfile } from "../../Slices/ProfileSlice";
+import About from "./About";
 
 const Profile = (props: any) => {
   const dispatch = useDispatch();
@@ -101,7 +102,7 @@ const Profile = (props: any) => {
       </div>
 
       <Divider mx="xs" size="xs" my="xl" />
-      <div className="px-3">
+      {/* <div className="px-3">
         <div className="text-2xl font-semibold mb-3 flex justify-between">
           About
           <ActionIcon
@@ -131,7 +132,8 @@ const Profile = (props: any) => {
             {profile?.about}
           </div>
         )}
-      </div>
+      </div> */}
+      <About/>
       <Divider mx="xs" my="xl" />
       <div className="px-3">
         <div className="text-2xl font-semibold mb-3 flex justify-between">
