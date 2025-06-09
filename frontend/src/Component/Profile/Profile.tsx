@@ -22,14 +22,16 @@ import fields from "../../Data/Profile";
 import { profile } from "../../Data/TalentData";
 import ExpInput from "./ExpInput";
 import CertiInput from "./CertiInput";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { getProfile } from "../../Services/ProfileService";
+import Info from "./Info";
+import { setProfile } from "../../Slices/ProfileSlice";
 
 const Profile = (props: any) => {
+  const dispatch = useDispatch();
   const user = useSelector((state: any) => state.user);
-  const profile =useSelector((state:any)=>state.profile);
+  const profile = useSelector((state: any) => state.profile);
   const notFromVideo = profile;
-  const select = fields;
   const [edit, setEdit] = useState([false, false, false, false, false]);
   const [about, setAbout] = useState(notFromVideo.about);
   const [addExp, setAddExp] = useState(false);
@@ -43,7 +45,7 @@ const Profile = (props: any) => {
   useEffect(() => {
     getProfile(user.id)
       .then((data: any) => {
-        console.log(data);
+        dispatch(setProfile(data));
       })
       .catch((err) => {
         console.log(err);
@@ -60,7 +62,7 @@ const Profile = (props: any) => {
         />
       </div>
       <div className="px-3 mt-16 ">
-        <div className="text-3xl font-semibold flex justify-between ">
+        {/* <div className="text-3xl font-semibold flex justify-between ">
           Jarrod Wood
           <ActionIcon
             onClick={() => handleEdit(0)}
@@ -93,7 +95,9 @@ const Profile = (props: any) => {
               <IconMapPin stroke={1.5} className="h-5 w-5 " /> New York, USA
             </div>
           </>
-        )}
+        )} */}
+
+        <Info />
       </div>
 
       <Divider mx="xs" size="xs" my="xl" />
@@ -124,7 +128,7 @@ const Profile = (props: any) => {
           />
         ) : (
           <div className="text-sm text-mine-shaft-300 text-justify ">
-            {about}
+            {profile?.about}
           </div>
         )}
       </div>
@@ -155,7 +159,7 @@ const Profile = (props: any) => {
           />
         ) : (
           <div className="flex flex-wrap gap-2 ">
-            {skills.map((skill: any, index: any) => (
+            {profile.skills?.map((skill: any, index: number) => (
               <div
                 key={index}
                 className="bg-bright-sun-300 text-sm font-medium bg-opacity-15 rounded-3xl text-bright-sun-400 px-3 py-1 "
@@ -194,7 +198,7 @@ const Profile = (props: any) => {
           </div>
         </div>
         <div className="flex flex-col gap-8">
-          {notFromVideo?.experience?.map((exp: any, index: any) => (
+          {profile?.experiences?.map((exp: any, index: any) => (
             <ExpCard {...exp} key={index} edit={edit[3]} />
           ))}
           {addExp && <ExpInput add setEdit={setAddExp} />}
@@ -229,7 +233,7 @@ const Profile = (props: any) => {
           </div>
         </div>
         <div className="flex flex-col gap-8">
-          {notFromVideo?.certifications?.map((certificate: any, index: any) => (
+          {profile?.certifications?.map((certificate: any, index: any) => (
             <CertiCard {...certificate} key={index} edit={edit[4]} />
           ))}
           {addCerti && <CertiInput setEdit={setAddCerti} />}
