@@ -27,6 +27,7 @@ import { getProfile } from "../../Services/ProfileService";
 import Info from "./Info";
 import { setProfile } from "../../Slices/ProfileSlice";
 import About from "./About";
+import Skills from "./Skills";
 
 const Profile = (props: any) => {
   const dispatch = useDispatch();
@@ -135,7 +136,7 @@ const Profile = (props: any) => {
       </div> */}
       <About/>
       <Divider mx="xs" my="xl" />
-      <div className="px-3">
+      {/* <div className="px-3">
         <div className="text-2xl font-semibold mb-3 flex justify-between">
           Skills
           <ActionIcon
@@ -171,7 +172,8 @@ const Profile = (props: any) => {
             ))}
           </div>
         )}
-      </div>
+      </div> */}
+      <Skills/>
       <Divider my="xl" mx="xs" />
       <div className="px-3 ">
         <div className="text-2xl font-semibold mb-5 flex justify-between">

@@ -1,34 +1,34 @@
-import { ActionIcon, Textarea } from "@mantine/core";
-import { IconCheck, IconPencil, IconX } from "@tabler/icons-react";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { changeProfile } from "../../Slices/ProfileSlice";
 import { successNotification } from "../../Services/NotificationService";
+import { changeProfile } from "../../Slices/ProfileSlice";
+import { ActionIcon, TagsInput } from "@mantine/core";
+import { IconCheck, IconPencil, IconX } from "@tabler/icons-react";
 
-const About = () => {
+const Skills = () => {
   const [edit, setEdit] = useState(false);
   const profile = useSelector((state: any) => state.profile);
-  const [about, setAbout] = useState("");
-  const dispatch =useDispatch();
+  const [skills, setSkills] = useState<string[]>([]);
+  const dispatch = useDispatch();
   const handleClick = () => {
     if (!edit) {
       setEdit(true);
-      setAbout(profile.about);
+      setSkills(profile.skills);
     } else {
       setEdit(false);
     }
   };
   const handleSave = () => {
     setEdit(false);
-      let updatedProfile = { ...profile, about:about };
-      dispatch(changeProfile(updatedProfile));
-      console.log(updatedProfile);
-      successNotification("Success", "About Updated Successfully.");
+    let updatedProfile = { ...profile, skills: skills };
+    dispatch(changeProfile(updatedProfile));
+    console.log(updatedProfile);
+    successNotification("Success", "Skills Updated Successfully.");
   };
   return (
     <div className="px-3">
       <div className="text-2xl font-semibold mb-3 flex justify-between">
-        About
+        Skills
         <div>
           {edit && (
             <ActionIcon
@@ -56,20 +56,26 @@ const About = () => {
       </div>
 
       {edit ? (
-        <Textarea
-          value={about}
-          autosize
-          minRows={3}
-          placeholder="Enter about yourself..."
-          onChange={(event) => setAbout(event.currentTarget.value)}
+        <TagsInput
+          value={skills}
+          onChange={setSkills}
+          placeholder="Add skill"
+          splitChars={[",", " ", "|"]}
         />
       ) : (
-        <div className="text-sm text-mine-shaft-300 text-justify ">
-          {profile?.about}
+        <div className="flex flex-wrap gap-2 ">
+          {profile.skills?.map((skill: any, index: number) => (
+            <div
+              key={index}
+              className="bg-bright-sun-300 text-sm font-medium bg-opacity-15 rounded-3xl text-bright-sun-400 px-3 py-1 "
+            >
+              {skill}
+            </div>
+          ))}
         </div>
       )}
     </div>
   );
 };
 
-export default About;
+export default Skills;
