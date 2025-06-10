@@ -28,6 +28,7 @@ import Info from "./Info";
 import { setProfile } from "../../Slices/ProfileSlice";
 import About from "./About";
 import Skills from "./Skills";
+import Experience from "./Experience";
 
 const Profile = (props: any) => {
   const dispatch = useDispatch();
@@ -175,7 +176,7 @@ const Profile = (props: any) => {
       </div> */}
       <Skills/>
       <Divider my="xl" mx="xs" />
-      <div className="px-3 ">
+      {/* <div className="px-3 ">
         <div className="text-2xl font-semibold mb-5 flex justify-between">
           Experience
           <div className="flex gap-2">
@@ -207,7 +208,8 @@ const Profile = (props: any) => {
           ))}
           {addExp && <ExpInput add setEdit={setAddExp} />}
         </div>
-      </div>
+      </div> */}
+      <Experience/>
 
       <Divider my="xl" mx="xs" />
       <div className="px-3">
