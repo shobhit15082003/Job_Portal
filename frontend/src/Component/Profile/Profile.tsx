@@ -4,14 +4,18 @@ import {
   IconAdjustments,
   IconBriefcase,
   IconDeviceFloppy,
+  IconEdit,
   IconMapPin,
   IconPencil,
   IconPlus,
 } from "@tabler/icons-react";
 import {
   ActionIcon,
+  Avatar,
   Button,
   Divider,
+  FileInput,
+  Overlay,
   TagsInput,
   Textarea,
 } from "@mantine/core";
@@ -25,15 +29,17 @@ import CertiInput from "./CertiInput";
 import { useDispatch, useSelector } from "react-redux";
 import { getProfile } from "../../Services/ProfileService";
 import Info from "./Info";
-import { setProfile } from "../../Slices/ProfileSlice";
+import { changeProfile, setProfile } from "../../Slices/ProfileSlice";
 import About from "./About";
 import Skills from "./Skills";
 import Experience from "./Experience";
 import Certificate from "./Certificate";
+import { useHover } from "@mantine/hooks";
+import { successNotification } from "../../Services/NotificationService";
 
 const Profile = (props: any) => {
   const dispatch = useDispatch();
-  const user = useSelector((state: any) => state.user);
+
   const profile = useSelector((state: any) => state.profile);
   const notFromVideo = profile;
   const [edit, setEdit] = useState([false, false, false, false, false]);
@@ -46,24 +52,57 @@ const Profile = (props: any) => {
     newEdit[index] = !newEdit[index];
     setEdit(newEdit);
   };
-  useEffect(() => {
-    getProfile(user.id)
-      .then((data: any) => {
-        dispatch(setProfile(data));
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+ 
+
+
+  const { hovered, ref } = useHover();
+
+  const handleFileChange=async(image:any)=>{
+    let picture:any=await getBase64(image);
+    let updatedProfile={...profile,picture:picture.split(',')[1]};
+    dispatch(changeProfile(updatedProfile));
+    successNotification("Success","Profile Picture Updated Successfully.");
+  }
+
+  const getBase64=(file:any)=>{
+    return new Promise((resolve,reject)=>{
+      const reader=new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload=()=>resolve(reader.result);
+      reader.onerror=error=>reject(error);
+    })
+  }
+
   return (
     <div className="w-4/5 mx-auto">
       <div className="relative">
         <img className="rounded-t-2xl " src="/Profile/banner.jpg" alt="" />
-        <img
-          className="rounded-full w-48 h-48 -bottom-1/3 absolute left-3 border-mine-shaft-950 border-8"
-          src={avatar}
-          alt=""
-        />
+        <div
+          ref={ref}
+          className="absolute flex items-center justify-center -bottom-1/3 left-3"
+        >
+          <Avatar
+            className="!w-48 !h-48 border-mine-shaft-950 border-8 rounded-full"
+            src={profile.picture?`data:image/jpeg;base64,${profile.picture}`:avatar}
+            alt=""
+          />
+          {hovered && (
+            <Overlay
+              className="!rounded-full"
+              color="#000"
+              backgroundOpacity={0.75}
+            />
+          )}
+          {hovered && <IconEdit className="absolute z-[300] !w-16 !h-16 " />}
+          {hovered && (
+            <FileInput
+              className="absolute  w-full z-[301] !h-full [&_*]:!h-full [&_*]:!rounded-full"
+              variant="transparent"
+              accept="image/png,image/jpeg"
+              onChange={handleFileChange}
+            />
+          )}
+        </div>
       </div>
       <div className="px-3 mt-16 ">
         {/* <div className="text-3xl font-semibold flex justify-between ">
@@ -136,7 +175,7 @@ const Profile = (props: any) => {
           </div>
         )}
       </div> */}
-      <About/>
+      <About />
       <Divider mx="xs" my="xl" />
       {/* <div className="px-3">
         <div className="text-2xl font-semibold mb-3 flex justify-between">
@@ -175,7 +214,7 @@ const Profile = (props: any) => {
           </div>
         )}
       </div> */}
-      <Skills/>
+      <Skills />
       <Divider my="xl" mx="xs" />
       {/* <div className="px-3 ">
         <div className="text-2xl font-semibold mb-5 flex justify-between">
@@ -210,7 +249,7 @@ const Profile = (props: any) => {
           {addExp && <ExpInput add setEdit={setAddExp} />}
         </div>
       </div> */}
-      <Experience/>
+      <Experience />
 
       <Divider my="xl" mx="xs" />
       {/* <div className="px-3">
@@ -246,7 +285,7 @@ const Profile = (props: any) => {
           {addCerti && <CertiInput setEdit={setAddCerti} />}
         </div>
       </div> */}
-      <Certificate/>
+      <Certificate />
     </div>
   );
 };
