@@ -37,6 +37,7 @@ const ExpInput = (props: any) => {
       location: isNotEmpty("Location is required"),
     },
   });
+
   useEffect(() => {
     if (!props.add)
       form.setValues({
@@ -125,7 +126,7 @@ const ExpInput = (props: any) => {
         label="Currently Working here"
       />
       <div className="flex gap-5">
-        <Button onClick={handleSave} color="brightSun.4" variant="outline">
+        <Button onClick={handleSave} color="green.8" variant="light">
           Save
         </Button>
         <Button

@@ -3,9 +3,25 @@ import { IconBookmark } from "@tabler/icons-react";
 import React, { useState } from "react";
 import ExpInput from "./ExpInput";
 import { formatDate } from "../../Services/UtilitiesService";
+import { useDispatch, useSelector } from "react-redux";
+import { changeProfile } from "../../Slices/ProfileSlice";
+import { successNotification } from "../../Services/NotificationService";
 
 const ExpCard = (props: any) => {
   const [edit, setEdit] = useState(false);
+  const profile = useSelector((state: any) => state.profile);
+  const dispatch = useDispatch();
+  const handleDelete = () => {
+    let exp = [...profile.experiences];
+    console.log('Before : ');
+    console.log(exp);
+    exp.splice(props.index, 1);
+    console.log('After');
+    console.log(exp);
+    let updatedProfile = { ...profile, experiences: exp };
+    dispatch(changeProfile(updatedProfile));
+    successNotification("Success", "Experience Deleted Successfully.");
+  };
   return !edit ? (
     <div className="flex flex-col gap-2 ">
       <div className="flex justify-between ">
@@ -21,7 +37,8 @@ const ExpCard = (props: any) => {
           </div>
         </div>
         <div className="text-sm text-mine-shaft-300">
-          {formatDate(props.startDate)} - {props.working?"Present":formatDate(props.endDate)}
+          {formatDate(props.startDate)} -{" "}
+          {props.working ? "Present" : formatDate(props.endDate)}
         </div>
       </div>
       <div className="text-sm text-mine-shaft-300 text-justify ">
@@ -36,7 +53,7 @@ const ExpCard = (props: any) => {
           >
             Edit
           </Button>
-          <Button color="red.8" variant="light">
+          <Button color="red.8" onClick={handleDelete} variant="light">
             Delete
           </Button>
         </div>

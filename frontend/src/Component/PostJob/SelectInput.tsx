@@ -2,16 +2,17 @@ import { Combobox, InputBase, ScrollArea, useCombobox } from "@mantine/core";
 import { useEffect, useState } from "react";
 
 const SelectInput = (props: any) => {
+  //  console.log("SelectInput props:", props);
+  const [data, setData] = useState<string[]>([]);
+  const [value, setValue] = useState<string | null>(null);
+  const [search, setSearch] = useState("");
+
   useEffect(() => {
     setData(props.options);
   }, []);
   const combobox = useCombobox({
     onDropdownClose: () => combobox.resetSelectedOption(),
   });
-
-  const [data, setData] = useState<string[]>([]);
-  const [value, setValue] = useState<string | null>(null);
-  const [search, setSearch] = useState("");
 
   const exactOptionMatch = data.some((item) => item === search);
   const filteredOptions = exactOptionMatch
@@ -31,12 +32,24 @@ const SelectInput = (props: any) => {
       store={combobox}
       withinPortal={false}
       onOptionSubmit={(val) => {
+        //   console.log("=== SelectInput Debug ===");
+        // console.log("Option selected:", val);
+        // console.log("props.form exists:", !!props.form);
+        // console.log("props.name:", props.name);
+        // console.log("About to call setFieldValue...");
+
         if (val === "$create") {
           setData((current) => [...current, search]);
           setValue(search);
+          if (props.form && props.name) {
+            props.form.setFieldValue(props.name, search);
+          }
         } else {
           setValue(val);
           setSearch(val);
+          if (props.form && props.name) {
+            props.form.setFieldValue(props.name, val);
+          }
         }
 
         combobox.closeDropdown();
