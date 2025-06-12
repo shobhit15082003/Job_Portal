@@ -43,8 +43,9 @@ function AppContent() {
         <Route path="/talent-profile" element={<TalentProfilePage />} />
         <Route path="/post-job" element={<PostJobPage />} />
         <Route path="/jobs" element={<JobDescPage />} />
-        <Route path="/apply-job" element={<ApplyJobPage />} />
-        <Route path="/company" element={<CompanyPage />} />
+        {/* <Route path="/jobs/:id" element={<JobDescPage />} /> */}
+        <Route path="/apply-job/:id" element={<ApplyJobPage />} />
+        <Route path="/company/:name" element={<CompanyPage />} />
         <Route path="/posted-job" element={<PostedJobPage />} />
         <Route path="/job-history" element={<JobHistoryPage />} />
         <Route path="/signup" element={ user?<Navigate to="/" />: <SignupPage />} />
