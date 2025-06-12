@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SelectInput from "../PostJob/SelectInput";
+
 import { Button, TextInput } from "@mantine/core";
 import fields from "../../Data/Profile";
 import { MonthPickerInput } from "@mantine/dates";
@@ -7,6 +7,7 @@ import { isNotEmpty, useForm } from "@mantine/form";
 import { useDispatch, useSelector } from "react-redux";
 import { changeProfile } from "../../Slices/ProfileSlice";
 import { successNotification } from "../../Services/NotificationService";
+import SelectInput from "./SelectInput";
 
 const CertiInput = (props: any) => {
   const select = fields;

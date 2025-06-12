@@ -6,10 +6,10 @@ import Underline from '@tiptap/extension-underline';
 import TextAlign from '@tiptap/extension-text-align';
 import Superscript from '@tiptap/extension-superscript';
 import SubScript from '@tiptap/extension-subscript';
-import { content } from '../../Data/PostJob';
 
 
-const TextEditor=()=> {
+
+const TextEditor=(props:any)=> {
  
   const editor = useEditor({
     extensions: [
@@ -21,7 +21,10 @@ const TextEditor=()=> {
       Highlight,
       TextAlign.configure({ types: ['heading', 'paragraph'] }),
     ],
-    content,
+    content:props.form.getValues().description,
+    onUpdate({editor}){
+      props.form.setFieldValue('description',editor.getHTML());
+    },
   });
 
   return (

@@ -19,7 +19,7 @@ const Header = () => {
   const user = useSelector((state: any) => state.user);
   const dispatch=useDispatch();
    useEffect(() => {
-    getProfile(user.id)
+    getProfile(user?.id)
       .then((data: any) => {
         dispatch(setProfile(data));
       })

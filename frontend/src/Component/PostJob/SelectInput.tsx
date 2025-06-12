@@ -9,6 +9,8 @@ const SelectInput = (props: any) => {
 
   useEffect(() => {
     setData(props.options);
+    setValue(props.form.getInputProps(props.name).value);
+    setSearch(props.form.getInputProps(props.name).value);
   }, []);
   const combobox = useCombobox({
     onDropdownClose: () => combobox.resetSelectedOption(),
@@ -18,7 +20,7 @@ const SelectInput = (props: any) => {
   const filteredOptions = exactOptionMatch
     ? data
     : data.filter((item) =>
-        item.toLowerCase().includes(search.toLowerCase().trim())
+        item.toLowerCase().includes(search?.toLowerCase().trim())
       );
 
   const options = filteredOptions.map((item) => (
@@ -32,24 +34,14 @@ const SelectInput = (props: any) => {
       store={combobox}
       withinPortal={false}
       onOptionSubmit={(val) => {
-        //   console.log("=== SelectInput Debug ===");
-        // console.log("Option selected:", val);
-        // console.log("props.form exists:", !!props.form);
-        // console.log("props.name:", props.name);
-        // console.log("About to call setFieldValue...");
-
         if (val === "$create") {
           setData((current) => [...current, search]);
           setValue(search);
-          if (props.form && props.name) {
-            props.form.setFieldValue(props.name, search);
-          }
+          props.form.setFieldValue(props.name, search);
         } else {
           setValue(val);
           setSearch(val);
-          if (props.form && props.name) {
-            props.form.setFieldValue(props.name, val);
-          }
+          props.form.setFieldValue(props.name, val);
         }
 
         combobox.closeDropdown();
@@ -57,8 +49,8 @@ const SelectInput = (props: any) => {
     >
       <Combobox.Target>
         <InputBase
+          {...props.form.getInputProps(props.name)}
           withAsterisk
-          className="[&_input]:font-medium"
           label={props.label}
           rightSection={<Combobox.Chevron />}
           value={search}
@@ -82,7 +74,7 @@ const SelectInput = (props: any) => {
         <Combobox.Options>
           <ScrollArea.Autosize mah={200} type="scroll">
             {options}
-            {!exactOptionMatch && search.trim().length > 0 && (
+            {!exactOptionMatch && search?.trim().length > 0 && (
               <Combobox.Option value="$create">
                 + Create {search}
               </Combobox.Option>
