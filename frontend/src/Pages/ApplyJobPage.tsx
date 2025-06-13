@@ -1,17 +1,37 @@
 import { Button } from "@mantine/core";
 import { IconArrowLeft } from "@tabler/icons-react";
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import ApplyJobComp from "../Component/ApplyJob/ApplyJobComp";
+import { getJob } from "../Services/JobService";
 
 const ApplyJobPage = () => {
+  const naviagte = useNavigate();
+  const { id } = useParams();
+  const [job, setJob] = useState<any>(null);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    getJob(id)
+      .then((res) => {
+        setJob(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [id]);
   return (
     <div className="min-h-[90vh] bg-mine-shaft-950 font-['poppins'] p-4">
-         <Link className='my-4 inline-block' to="/jobs">
-          <Button leftSection={<IconArrowLeft size={20}/>} color='brightSun.4' variant='light'>Back</Button>
+      <Button
+      my="md"
+        onClick={() => naviagte(-1)}
+        leftSection={<IconArrowLeft size={20} />}
+        color="brightSun.4"
+        variant="light"
+      >
+        Back
+      </Button>
 
-        </Link>
-        <ApplyJobComp/>
+      <ApplyJobComp {...job} />
     </div>
   );
 };
