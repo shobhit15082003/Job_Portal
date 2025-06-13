@@ -6,7 +6,7 @@ import { timeAgo } from '../../Services/UtilitiesService'
 
 const JobCard = (props:any) => {
   return (
-    <Link to={`/jobs/>${props.id}`} className='bg-mine-shaft-900 p-4 w-72 flex flex-col gap-3 rounded-xl hover:shadow-[0_0_5px_1px_yellow] !shadow-bright-sun-400  '>
+    <Link to={`/jobs/${props.id}`} className='bg-mine-shaft-900 p-4 w-72 flex flex-col gap-3 rounded-xl hover:shadow-[0_0_5px_1px_yellow] !shadow-bright-sun-400  '>
       <div className='flex justify-between '>
         <div className='flex gap-2 items-center'>
           <div className='p-2 bg-mine-shaft-800 rounded-md '>

@@ -14,8 +14,11 @@ const JobDescPage = () => {
     getJob(id)
       .then((res) => {
         setJob(res);
+        console.log(job);
+
       })
       .catch((err) => {
+        console.log(id);
         console.log(err);
       });
   }, [id]);
