@@ -9,6 +9,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const JobHistoryCard = (props: any) => {
+  
   return (
     <Link
       to="/jobs"
