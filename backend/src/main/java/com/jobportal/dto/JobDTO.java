@@ -1,5 +1,6 @@
 package com.jobportal.dto;
 
+import com.jobportal.entity.Applicant;
 import com.jobportal.entity.Job;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,7 +16,7 @@ public class JobDTO {
     private Long id;
     private String jobTitle;
     private String company;
-    private List<Applicant> applicants;
+    private List<ApplicationDTO> applicants;
     private String about;
     private String experience;
     private String jobType;
@@ -26,7 +27,21 @@ public class JobDTO {
     private List<String> skillsRequired;
     private JobStatus jobStatus;
 
-    public Job toEntity(){
-        return new Job(this.id, this.jobTitle,this.company,this.applicants,this.about,this.experience,this.jobType,this.location,this.packageOffered,this.postTime,this.description,this.skillsRequired,this.jobStatus);
+    public Job toEntity() {
+        return new Job(
+                this.id,
+                this.jobTitle,
+                this.company,
+                this.applicants != null ? this.applicants.stream().map(ApplicationDTO::toEntity).toList() : null,
+                this.about,
+                this.experience,
+                this.jobType,
+                this.location,
+                this.packageOffered,
+                this.postTime,
+                this.description,
+                this.skillsRequired,
+                this.jobStatus
+        );
     }
 }

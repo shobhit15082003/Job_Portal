@@ -2,10 +2,9 @@ const formatDate = (dateString: string) => {
   const date = new Date(dateString);
   const options = { year: "numeric" as const, month: "short" as const };
   return date.toLocaleDateString("en-US", options);
-
 };
 
-function timeAgo(time:string) {
+function timeAgo(time: string) {
   const now = new Date();
   const past = new Date(time);
   const diff = now.getTime() - past.getTime();
@@ -29,4 +28,13 @@ function timeAgo(time:string) {
   }
 }
 
-export { formatDate, timeAgo };
+const getBase64 = (file: any) => {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = (error) => reject(error);
+  });
+};
+
+export { formatDate, timeAgo, getBase64 };
