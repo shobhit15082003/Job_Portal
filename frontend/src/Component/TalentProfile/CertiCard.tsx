@@ -1,4 +1,5 @@
 import React from "react";
+import { formatDate } from "../../Services/UtilitiesService";
 
 const CertiCard = (props:any) => {
   return (
@@ -15,7 +16,7 @@ const CertiCard = (props:any) => {
         </div>
       </div>
       <div className="flex flex-col items-end">
-        <div className="text-sm text-mine-shaft-300 ">{props.issueDate}</div>
+        <div className="text-sm text-mine-shaft-300 ">{formatDate(props.issueDate)}</div>
         <div className="text-sm text-mine-shaft-300 ">ID: {props.certificateId}</div>
       </div>
     </div>
