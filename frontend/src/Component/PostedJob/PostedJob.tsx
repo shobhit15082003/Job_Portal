@@ -9,7 +9,7 @@ const PostedJob = (props: any) => {
     setActiveTab(props.job?.jobStatus||'ACTIVE');
   },[props.job]);
   return (
-    <div className="w-1/6 mt-5">
+    <div className="w-1/5 mt-5">
       <div className="text-2xl font-semibold mb-5">Jobs</div>
       {/* <div>
         <Tabs autoContrast variant="pills" defaultValue="active">
