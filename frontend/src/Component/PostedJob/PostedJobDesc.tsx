@@ -29,7 +29,7 @@ const PostedJobDesc = (props: any) => {
               </Tabs.List>
 
               <Tabs.Panel value="overview" className="[&>div]:w-full">
-                <JobDesc {...props} edit />
+                <JobDesc {...props} edit  closed={props.jobStatus=="CLOSED"}/>
               </Tabs.Panel>
               <Tabs.Panel value="applicants">
                 <div className="flex mt-10 flex-wrap gap-5 justify-around">

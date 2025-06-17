@@ -13,6 +13,11 @@ import DOMPurify from "dompurify";
 import { timeAgo } from "../../Services/UtilitiesService";
 import { useDispatch, useSelector } from "react-redux";
 import { changeProfile } from "../../Slices/ProfileSlice";
+import { postJob } from "../../Services/JobService";
+import {
+  errorNotification,
+  successNotification,
+} from "../../Services/NotificationService";
 
 const JobDesc = (props: any) => {
   const data = DOMPurify.sanitize(props.description);
@@ -31,27 +36,32 @@ const JobDesc = (props: any) => {
   const user = useSelector((state: any) => state.user);
   const [applied, setApplied] = useState(false);
   useEffect(() => {
-   
-      const hasApplied = props.applicants?.some(
-    (applicant: any) => applicant.applicantId === user.id
-  );
-  if(hasApplied)
-    {
+    const hasApplied = props.applicants?.some(
+      (applicant: any) => applicant.applicantId === user.id
+    );
+    if (hasApplied) {
       setApplied(true);
-      
-    }
-    else
-      setApplied(false);
-//  if (
-//       props.applicants?.filter((applicant: any) => applicant.applicantId !== user.id)
-//         .length > 0
-//     ){
-//       setApplied(true);
-//     }
-//     else
-//       setApplied(false);
-    
+    } else setApplied(false);
+    //  if (
+    //       props.applicants?.filter((applicant: any) => applicant.applicantId !== user.id)
+    //         .length > 0
+    //     ){
+    //       setApplied(true);
+    //     }
+    //     else
+    //       setApplied(false);
   }, [props]);
+
+  const handleClose = () => {
+    postJob({ ...props, jobStatus: "CLOSED" })
+      .then((res) => {
+        successNotification("Success", "Job Closed Successfully");
+      })
+      .catch((err) => {
+        errorNotification("Error", err.response.data.errorMessage);
+      });
+  };
+
   return (
     <div className="w-2/3">
       <div className="flex justify-between ">
@@ -71,7 +81,7 @@ const JobDesc = (props: any) => {
           {(props.edit || !applied) && (
             <Link to={`/apply-job/${props.id}`}>
               <Button color="brightSun.4" size="sm" variant="light">
-                {props.edit ? "Edit" : "Apply"}
+                {props.close ? "Reopen" : props.edit ? "Edit" : "Apply"}
               </Button>
             </Link>
           )}
@@ -80,9 +90,14 @@ const JobDesc = (props: any) => {
               Applied
             </Button>
           )}
-          {props.edit ? (
-            <Button color="red.5" size="sm" variant="outline">
-              Delete
+          {props.edit && !props.closed ? (
+            <Button
+              color="red.5"
+              size="sm"
+              variant="outline"
+              onClick={handleClose}
+            >
+              Close
             </Button>
           ) : profile.savedJobs?.includes(props.id) ? (
             <IconBookmarkFilled
