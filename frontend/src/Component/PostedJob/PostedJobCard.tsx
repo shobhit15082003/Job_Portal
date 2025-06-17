@@ -1,12 +1,15 @@
 import React from 'react'
+import { Link, useParams } from 'react-router-dom'
+import { timeAgo } from '../../Services/UtilitiesService';
 
 const PostedJobCard = (props:any) => {
+  const {id}=useParams();
   return (
-    <div className='bg-mine-shaft-900 rounded-xl p-2 '>
+    <Link to={`/posted-job/${props.id}`} className={`bg-mine-shaft-900 rounded-xl p-2 2-53 border-l-2 hover:bg-opacity-80 cursor-pointer border-l-bright-sun-400 ${props.id==id}?"bg-bright-sun-400 text-black":"bg-mine-shaft-900 text-mine-shaft-300"`}>
       <div className='text-sm font-semibold'>{props.jobTitle}</div>
-      <div className='text-xs text-mine-shaft-300 font-medium'>{props.location}</div>
-      <div className='text-xs text-mine-shaft-300 '>{props.posted}</div>
-    </div>
+      <div className='text-xs  font-medium'>{props.location}</div>
+      <div className='text-xs  '>{timeAgo(props.postTime)}</div>
+    </Link>
   )
 }
 

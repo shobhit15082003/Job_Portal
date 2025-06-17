@@ -1,5 +1,6 @@
 package com.jobportal.service;
 
+import com.jobportal.dto.Application;
 import com.jobportal.dto.ApplicationDTO;
 import com.jobportal.dto.JobDTO;
 import com.jobportal.dto.ResponseDTO;
@@ -18,4 +19,8 @@ public interface JobService {
 
 
     public void applyJob(Long id, ApplicationDTO applicationDTO) throws JobPortalException;
+
+    public List<JobDTO> getJobsPostedBy(Long id);
+
+    public void changeAppStatus(Application application) throws JobPortalException;
 }
