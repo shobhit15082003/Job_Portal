@@ -41,7 +41,7 @@ function AppContent() {
         <Route path="/find-jobs" element={<FindJobs />} />
         <Route path="/find-talent" element={<FindTalentPage />} />
         <Route path="/talent-profile/:id" element={<TalentProfilePage />} />
-        <Route path="/post-job" element={<PostJobPage />} />
+        <Route path="/post-job/:id" element={<PostJobPage />} />
         {/* <Route path="/jobs" element={<JobDescPage />} /> */}
         <Route path="/jobs/:id" element={<JobDescPage />} />
         <Route path="/apply-job/:id" element={<ApplyJobPage />} />
