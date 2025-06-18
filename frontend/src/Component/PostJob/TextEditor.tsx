@@ -1,16 +1,17 @@
-import { RichTextEditor, Link } from '@mantine/tiptap';
-import { useEditor } from '@tiptap/react';
-import Highlight from '@tiptap/extension-highlight';
-import StarterKit from '@tiptap/starter-kit';
-import Underline from '@tiptap/extension-underline';
-import TextAlign from '@tiptap/extension-text-align';
-import Superscript from '@tiptap/extension-superscript';
-import SubScript from '@tiptap/extension-subscript';
+import { RichTextEditor, Link } from "@mantine/tiptap";
+import { useEditor } from "@tiptap/react";
+import Highlight from "@tiptap/extension-highlight";
+import StarterKit from "@tiptap/starter-kit";
+import Underline from "@tiptap/extension-underline";
+import TextAlign from "@tiptap/extension-text-align";
+import Superscript from "@tiptap/extension-superscript";
+import SubScript from "@tiptap/extension-subscript";
+import { useEffect } from "react";
 
-
-
-const TextEditor=(props:any)=> {
- 
+const TextEditor = (props: any) => {
+  useEffect(() => {
+    editor?.commands.setContent(props.data);
+  }, [props.data]);
   const editor = useEditor({
     extensions: [
       StarterKit,
@@ -19,17 +20,21 @@ const TextEditor=(props:any)=> {
       Superscript,
       SubScript,
       Highlight,
-      TextAlign.configure({ types: ['heading', 'paragraph'] }),
+      TextAlign.configure({ types: ["heading", "paragraph"] }),
     ],
-    content:props.form.getValues().description,
-    onUpdate({editor}){
-      props.form.setFieldValue('description',editor.getHTML());
+    content: props.form.getValues().description,
+    onUpdate({ editor }) {
+      props.form.setFieldValue("description", editor.getHTML());
     },
   });
 
   return (
     <RichTextEditor editor={editor}>
-      <RichTextEditor.Toolbar bg="mineShaft.10" sticky stickyOffset="var(--docs-header-height)">
+      <RichTextEditor.Toolbar
+        bg="mineShaft.10"
+        sticky
+        stickyOffset="var(--docs-header-height)"
+      >
         <RichTextEditor.ControlsGroup>
           <RichTextEditor.Bold />
           <RichTextEditor.Italic />
@@ -74,5 +79,5 @@ const TextEditor=(props:any)=> {
       <RichTextEditor.Content bg="mineShaft.10" />
     </RichTextEditor>
   );
-}
+};
 export default TextEditor;

@@ -1,23 +1,41 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SelectInput from "./SelectInput";
 import { content, fields } from "../../Data/PostJob";
 import { Button, NumberInput, TagsInput, Textarea } from "@mantine/core";
 import TextEditor from "./TextEditor";
 import { IconArrowLeft } from "@tabler/icons-react";
 import { isNotEmpty, useForm } from "@mantine/form";
-import { postJob } from "../../Services/JobService";
+import { getJob, postJob } from "../../Services/JobService";
 import {
   errorNotification,
   successNotification,
 } from "../../Services/NotificationService";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const PostJob = () => {
+  const { id } = useParams();
+  const [editorData, setEditorData] = useState(content);
   const select = fields;
   const navigate = useNavigate();
-  const user=useSelector((state:any)=>state.user);
-  const profile=useSelector((state:any)=>state.profile);
+  const user = useSelector((state: any) => state.user);
+  const profile = useSelector((state: any) => state.profile);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    if (id !== "0") {
+      getJob(id)
+        .then((res) => {
+          form.setValues(res);
+          setEditorData(res.description);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    } else {
+      form.reset();
+      setEditorData(content);
+    }
+  }, [id]);
   const form = useForm({
     mode: "controlled",
     validateInputOnChange: true,
@@ -47,7 +65,7 @@ const PostJob = () => {
   const handlePost = () => {
     form.validate();
     if (!form.isValid) return;
-    postJob({...form.getValues(),postedBy:user.id, jobStatus:"ACTIVE"})
+    postJob({ ...form.getValues(), id, postedBy: user.id, jobStatus: "ACTIVE" })
       .then((res) => {
         successNotification("Success", "Job Posted Successfully");
         navigate(`/posted-jobs/${res.id}`);
@@ -57,8 +75,8 @@ const PostJob = () => {
         errorNotification("Failed", err.response.data.errorMessage);
       });
   };
-    const handleDraft = () => {
-    postJob({...form.getValues(),postedBy:user.id, jobStatus:"DRAFT"})
+  const handleDraft = () => {
+    postJob({ ...form.getValues(), id, postedBy: user.id, jobStatus: "DRAFT" })
       .then((res) => {
         successNotification("Success", "Job Drafted Successfully");
         navigate(`/posted-jobs/${res.id}`);
@@ -113,7 +131,7 @@ const PostJob = () => {
           <div className="text-sm font-medium">
             Job Description <span className="text-red-500">*</span>
           </div>
-          <TextEditor form={form} />
+          <TextEditor form={form} data={editorData} />
         </div>
         <div className="flex gap-4 ">
           <Button color="brightSun.4" onClick={handlePost} variant="light">
