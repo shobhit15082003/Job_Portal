@@ -4,14 +4,17 @@ import JobCard from "./JobCard";
 import { getAllJobs } from "../../Services/JobService";
 import { useDispatch, useSelector } from "react-redux";
 import { resetFilter } from "../../Slices/FilterSlice";
+import { resetSort } from "../../Slices/SortSlice";
 
 const Jobs = () => {
   const [jobList, setJobList] = useState([{}]);
   const filter = useSelector((state: any) => state.filter);
   const [filteredJobs, setFilteredJobs] = useState<any>([]);
+  const sort = useSelector((state: any) => state.sort);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(resetFilter());
+    dispatch(resetSort());
     getAllJobs()
       .then((res) => {
         setJobList(res.filter((job: any) => job.jobStatus == "ACTIVE"));
@@ -20,6 +23,29 @@ const Jobs = () => {
         console.log(err);
       });
   }, []);
+  useEffect(() => {
+    if (sort == "Most Recent") {
+      setJobList(
+        [...jobList].sort(
+          (a: any, b: any) =>
+            new Date(b.postTime).getTime() - new Date(a.postTime).getTime()
+        )
+      );
+    } else if (sort == "Salary: Low to High") {
+      setJobList(
+        [...jobList].sort(
+          (a: any, b: any) => a.packageOffered - b.packageOffered
+        )
+      );
+    } else if (sort == "Salary: High to Low") {
+      setJobList(
+        [...jobList].sort(
+          (a: any, b: any) => b.packageOffered - a.packageOffered
+        )
+      );
+    }
+  }, [sort]);
+
   useEffect(() => {
     let filtered = jobList;
     if (filter["Job Title"] && filter["Job Title"].length > 0) {
@@ -57,7 +83,7 @@ const Jobs = () => {
       filtered = filtered.filter(
         (jobs: any) =>
           filter.salary[0] <= jobs.packageOffered &&
-          jobs.salary[0] <= filter.packageOffered[1]
+          jobs.packageOffered <= filter.salary[1]
       );
     }
 
@@ -68,7 +94,7 @@ const Jobs = () => {
       <div className="flex justify-between">
         <div className="text-2xl font-semibold ">Recommended Jobs</div>
 
-        <Sort />
+        <Sort sort="job" />
       </div>
       <div className="mt-10 flex flex-wrap gap-5 ">
         {filteredJobs.map((job: any, index: any) => (
