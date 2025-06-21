@@ -44,6 +44,9 @@ const Profile = (props: any) => {
         <div className="flex gap-1 text-lg items-center text-mine-shaft-300">
           <IconMapPin stroke={1.5} className="h-5 w-5 " /> {profile?.location}
         </div>
+        <div className="flex gap-1 text-lg items-center text-mine-shaft-300">
+          <IconBriefcase stroke={1.5} className="h-5 w-5 " />Experience {profile?.totalExp} {profile?.totalExp>1?"Years":"Year"}
+        </div>
       </div>
       <Divider mx="xs" size="xs" my="xl" />
       <div className="px-3">

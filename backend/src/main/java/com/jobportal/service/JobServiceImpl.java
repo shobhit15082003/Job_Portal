@@ -72,7 +72,7 @@ public class JobServiceImpl implements JobService{
                 x.setApplicationStatus(application.getApplicationStatus());
                 if(application.getApplicationStatus().equals(ApplicationStatus.INTERVIEWING))
                     x.setInterviewTime(application.getInterviewTime());
-
+                
             }
             return x;
         }).toList();
