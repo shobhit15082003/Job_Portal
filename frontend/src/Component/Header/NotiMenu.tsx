@@ -2,7 +2,7 @@ import { Indicator, Menu, Notification, rem, Stack } from "@mantine/core";
 import { IconBell, IconCheck } from "@tabler/icons-react";
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { getNotifications, readNotification } from "../../Services/NotiService";
 
 const NotiMenu = () => {
@@ -25,12 +25,12 @@ const NotiMenu = () => {
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
   };
-
+const navigate=useNavigate();
   return (
     <Menu shadow="md" width={400} opened={opened} onChange={setOpened}>
       <Menu.Target>
         <div className="bg-mine-shaft-900 p-1.5 rounded-full">
-          <Indicator color="brightSun.4" offset={6} size={8} processing>
+          <Indicator disabled={notifications.length<=0} color="brightSun.4" offset={6} size={8} processing>
             <IconBell stroke={1.5} />
           </Indicator>
         </div>
@@ -46,6 +46,11 @@ const NotiMenu = () => {
               color="teal"
               title={noti.action}
               mt="md"
+              onClick={()=>{
+                navigate(noti.route);
+                unread(index);
+                setOpened(false);
+              }}
             >
               {noti.message}
             </Notification>

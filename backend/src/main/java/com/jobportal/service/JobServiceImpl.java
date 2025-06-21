@@ -19,11 +19,20 @@ public class JobServiceImpl implements JobService{
     @Autowired
     private JobRepository jobRepository;
 
+    @Autowired
+    private NotificationService notificationService;
+
     @Override
     public JobDTO postJob(JobDTO jobDTO) throws JobPortalException {
         if(jobDTO.getId()==0) {
             jobDTO.setId(Utilities.getNextSequence("jobs"));
             jobDTO.setPostTime(LocalDateTime.now());
+            NotificationDTO notiDTO=new NotificationDTO();
+            notiDTO.setAction("Job Posted Successfully");
+            notiDTO.setMessage("Job Posted Successfully for "+jobDTO.getJobTitle()+" at "+jobDTO.getCompany());
+            notiDTO.setUserId(jobDTO.getPostedBy());
+            notiDTO.setRoute("/posted-jobs/"+jobDTO.getId());
+            notificationService.sendNotificiation(notiDTO);
         }
         else{
             Job job=jobRepository.findById(jobDTO.getId()).orElseThrow(()->new JobPortalException("JOB_NOT_FOUND"));
@@ -70,9 +79,19 @@ public class JobServiceImpl implements JobService{
         List<Applicant>applicants=job.getApplicants().stream().map((x)->{
             if(application.getApplicantId()==x.getApplicantId()){
                 x.setApplicationStatus(application.getApplicationStatus());
-                if(application.getApplicationStatus().equals(ApplicationStatus.INTERVIEWING))
+                if(application.getApplicationStatus().equals(ApplicationStatus.INTERVIEWING)){
                     x.setInterviewTime(application.getInterviewTime());
-                
+                    NotificationDTO notiDTO=new NotificationDTO();
+                    notiDTO.setAction("Interview Scheduled");
+                    notiDTO.setMessage("Interview Scheduled for job id: "+application.getId());
+                    notiDTO.setUserId(application.getApplicantId());
+                    notiDTO.setRoute("/job-history");
+                    try {
+                        notificationService.sendNotificiation(notiDTO);
+                    } catch (JobPortalException e) {
+                        e.printStackTrace();
+                    }
+                }
             }
             return x;
         }).toList();
