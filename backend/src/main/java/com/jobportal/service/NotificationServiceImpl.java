@@ -29,7 +29,7 @@ public class NotificationServiceImpl implements NotificationService{
 
     @Override
     public List<Notification> getUnreadNotifications(Long userId) {
-        return notificationRepository.findbyUserIdAndStatus(userId, NotificationStatus.UNREAD);
+        return notificationRepository.findByUserIdAndStatus(userId, NotificationStatus.UNREAD);
     }
 
     @Override
