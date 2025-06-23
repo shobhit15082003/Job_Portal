@@ -7,27 +7,37 @@ import {
 } from "@tabler/icons-react";
 import avatarImage from "../assests/avatar-9.png";
 import NavLinks from "./NavLinks";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import ProfileMenu from "./ProfileMenu";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { getProfile } from "../../Services/ProfileService";
 import { setProfile } from "../../Slices/ProfileSlice";
 import NotiMenu from "./NotiMenu";
+import { jwtDecode } from "jwt-decode";
+import { setUser } from "../../Slices/UserSlice";
 
 const Header = () => {
   const location = useLocation();
   const user = useSelector((state: any) => state.user);
-  const dispatch=useDispatch();
-   useEffect(() => {
-    getProfile(user?.id)
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  useEffect(() => {
+    const token = localStorage.getItem("token") || "";
+    if (token != "") {
+      const decoded = jwtDecode(token);
+      dispatch(setUser({ ...decoded, email: decoded.sub }));
+    }
+  }, [navigate]);
+  useEffect(() => {
+    getProfile(user?.profileId) //changed from user?.id
       .then((data: any) => {
         dispatch(setProfile(data));
       })
       .catch((err) => {
         console.log(err);
       });
-  }, [user]);
+  }, []); //changed from [user]
   return location.pathname != "/signup" && location.pathname != "/login" ? (
     <div className="w-full bg-mine-shaft-950 px-6 h-20 text-white flex justify-between items-center font-['poppins]">
       <div className="flex gap-1  items-center text-bright-sun-400">
@@ -48,7 +58,7 @@ const Header = () => {
         {/* <div className="bg-mine-shaft-900 p-1.5 rounded-full">
           <IconSettings stroke={1.5} />
         </div> */}
-        {user?<NotiMenu/>:<></>}
+        {user ? <NotiMenu /> : <></>}
       </div>
     </div>
   ) : (

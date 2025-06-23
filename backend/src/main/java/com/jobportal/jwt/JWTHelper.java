@@ -55,6 +55,11 @@ public class JWTHelper {
     // Generate token with username as subject
     public String generateToken(UserDetails userDetail) {
         Map<String,Object> claims=new HashMap<>();
+        CustomUserDetails customUserDetails=(CustomUserDetails) userDetail;
+        claims.put("id",customUserDetails.getId());
+        claims.put("name",customUserDetails.getName());
+        claims.put("accountType",customUserDetails.getAccountType());
+        claims.put("profileId",customUserDetails.getProfileId());
         return doGenerateToken(claims,userDetail.getUsername());
     }
 
