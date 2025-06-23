@@ -27,6 +27,8 @@ import { Notifications } from "@mantine/notifications";
 import { Provider, useSelector } from "react-redux";
 import Store from "./Store";
 import { getItem } from "./Services/LocalStorage";
+import ProtectedRoute from "./Services/ProtectedRoute";
+import PublicRoute from "./Services/PublicRoute";
 
 function AppContent() {
   const location = useLocation();
@@ -41,15 +43,14 @@ function AppContent() {
         <Route path="/find-jobs" element={<FindJobs />} />
         <Route path="/find-talent" element={<FindTalentPage />} />
         <Route path="/talent-profile/:id" element={<TalentProfilePage />} />
-        <Route path="/post-job/:id" element={<PostJobPage />} />
-        {/* <Route path="/jobs" element={<JobDescPage />} /> */}
+        <Route path="/post-job/:id" element={<ProtectedRoute allowedRoles={['APPLICANT']}><PostJobPage /></ProtectedRoute>} />
         <Route path="/jobs/:id" element={<JobDescPage />} />
         <Route path="/apply-job/:id" element={<ApplyJobPage />} />
         <Route path="/company/:name" element={<CompanyPage />} />
-        <Route path="/posted-job/:id" element={<PostedJobPage />} />
-        <Route path="/job-history" element={<JobHistoryPage />} />
-        <Route path="/signup" element={ user?<Navigate to="/" />: <SignupPage />} />
-        <Route path="/login" element={ user?<Navigate to="/" />: <SignupPage />} />
+        <Route path="/posted-job/:id" element={<ProtectedRoute allowedRoles={['EMPLOYER']}><PostedJobPage /></ProtectedRoute>} />
+        <Route path="/job-history" element={<ProtectedRoute allowedRoles={['EMPLOYER']}><JobHistoryPage /></ProtectedRoute>} />
+        <Route path="/signup" element={<PublicRoute><SignupPage /></PublicRoute>} />
+        <Route path="/login" element={ <SignupPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="*" element={<HomePage />} />
       </Routes>

@@ -16,20 +16,22 @@ import { setProfile } from "../../Slices/ProfileSlice";
 import NotiMenu from "./NotiMenu";
 import { jwtDecode } from "jwt-decode";
 import { setUser } from "../../Slices/UserSlice";
+import { setupResponseInterceptor } from "../../Interceptor/AxiosInterceptor";
 
 const Header = () => {
   const location = useLocation();
   const user = useSelector((state: any) => state.user);
+  const token = useSelector((state: any) => state.jwt);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   useEffect(() => {
-    const token = localStorage.getItem("token") || "";
+    setupResponseInterceptor(navigate);
+  }, [navigate]);
+  useEffect(() => {
     if (token != "") {
       const decoded = jwtDecode(token);
       dispatch(setUser({ ...decoded, email: decoded.sub }));
     }
-  }, [navigate]);
-  useEffect(() => {
     getProfile(user?.profileId) //changed from user?.id
       .then((data: any) => {
         dispatch(setProfile(data));
@@ -37,7 +39,7 @@ const Header = () => {
       .catch((err) => {
         console.log(err);
       });
-  }, []); //changed from [user]
+  }, [token,navigate]); //changed from [user]
   return location.pathname != "/signup" && location.pathname != "/login" ? (
     <div className="w-full bg-mine-shaft-950 px-6 h-20 text-white flex justify-between items-center font-['poppins]">
       <div className="flex gap-1  items-center text-bright-sun-400">
