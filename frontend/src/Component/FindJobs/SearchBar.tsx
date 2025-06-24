@@ -36,7 +36,7 @@ const SearchBar = () => {
             <React.Fragment key={index}>
               <div
                 key={index}
-                className="w-1/5 lg-mx:w-1/4 bs-mx:w-[30%] sm-mx:w-[48%]"
+                className="w-1/5 lg-mx:w-1/4 bs-mx:w-[30%] sm-mx:w-[48%] xs-mx:w-full"
               >
                 <MultiInput {...item} />
               </div>
@@ -48,7 +48,7 @@ const SearchBar = () => {
               />
             </React.Fragment>
           ))}
-          <div className="w-1/5 lg-mx:w-1/4 lg-mx:mt-7 bs-mx:w-[30%] sm-mx:w-[48%] text-sm text-mine-shaft-300 [&_.mantine-Slider-label]:!translate-y-10">
+          <div className="w-1/5 lg-mx:w-1/4 lg-mx:mt-7 bs-mx:w-[30%] sm-mx:w-[48%] xs-mx:w-full text-sm text-mine-shaft-300 [&_.mantine-Slider-label]:!translate-y-10">
             <div className="flex text-sm justify-between ">
               <div>Salary</div>
               <div>
