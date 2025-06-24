@@ -27,6 +27,7 @@ const ApplyJobPage = () => {
         leftSection={<IconArrowLeft size={20} />}
         color="brightSun.4"
         variant="light"
+        mb="xs"
       >
         Back
       </Button>

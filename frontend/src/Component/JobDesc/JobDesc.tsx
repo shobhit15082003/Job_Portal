@@ -63,21 +63,21 @@ const JobDesc = (props: any) => {
   };
 
   return (
-    <div className="w-2/3">
-      <div className="flex justify-between ">
+    <div className="w-2/3 bs-mx:w-full">
+      <div className="flex justify-between items-center flex-wrap">
         <div className="flex gap-2 items-center">
-          <div className="p-3 bg-mine-shaft-800 rounded-xl ">
-            <img className="h-14" src={`/Icons/${props.company}.png`} alt="" />
+          <div className="p-3 bg-mine-shaft-800 rounded-xl flex shrink-0">
+            <img className="h-14 xs-mx:h-10 xs-mx:w-10" src={`/Icons/${props.company}.png`} alt="" />
           </div>
           <div className="flex flex-col gap-1">
-            <div className="font-semibold text-2xl">{props.jobTitle}</div>
-            <div className="text-lg text-mine-shaft-300 ">
-              {props.company} &bull; {timeAgo(props.postTime)} days ago &bull;{" "}
-              {props.applicants ? props.applicants.length : 0} Applicants
+            <div className="font-semibold text-2xl xs-mx:text-xl">{props.jobTitle}</div>
+            <div className="text-lg text-mine-shaft-300 flex xs-mx:flex-wrap xs-mx:text-base ">
+             <span> {props.company} </span><span>&bull; {timeAgo(props.postTime||"")} days ago {" "}</span>
+              <span className="">&bull; {props.applicants ? props.applicants.length : 0} Applicants</span>
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-2 items-center ">
+        <div className="flex sm:flex-col gap-2 items-center sm-mx:my-5 sm-mx:w-full sm-mx:[&>button]:w-1/2">
           {(props.edit || !applied) && (
             <Link to={props.edit?`/post-job/${props.id}`:`/apply-job/${props.id}`}>
               <Button color="brightSun.4" size="sm" variant="light">
@@ -115,7 +115,7 @@ const JobDesc = (props: any) => {
         </div>
       </div>
       <Divider my="xl" />
-      <div className="flex justify-between ">
+      <div className="flex justify-between gap-4 sm-mx:flex-wrap">
         {card.map((item: any, index: number) => {
           const IconComponent = item.icon;
           return (
@@ -125,13 +125,13 @@ const JobDesc = (props: any) => {
                 size="lg"
                 radius="xl"
                 aria-label="Settings"
-                className="!h-12 !w-12"
+                className="!h-12 !w-12 xs-mx:!h-8 xs-mx:!w-8"
                 color="brightSun.4"
               >
                 <IconComponent className="h-4/5 w-4/5" stroke={1.5} />
               </ActionIcon>
-              <div className="text-mine-shaft-300 text-sm">{item.name}</div>
-              <div className="font-semibold">
+              <div className="text-mine-shaft-300 text-sm ">{item.name}</div>
+              <div className="font-semibold xs-mx:text-sm">
                 {props ? props[item.id] : "NA"}{" "}
                 {item.id == "packageOffered" && <>LPA</>}
               </div>
@@ -150,7 +150,7 @@ const JobDesc = (props: any) => {
               size="lg"
               radius="xl"
               aria-label="Settings"
-              className="!h-fit !w-fit font-medium !text-sm "
+              className="!h-fit !w-fit font-medium !text-sm xs-mx:!text-xs"
               color="brightSun.4"
               p="xs"
             >
@@ -161,13 +161,13 @@ const JobDesc = (props: any) => {
       </div>
       <Divider my="xl" />
       <div
-        className="[&_h4]:text-xl [&_*]:text-mine-shaft-300 [&_li]:marker:text-bright-sun-400 [&_li]:mb-1 [&_h4]:my-5 [&_h4]:font-semibold [&_h4]:text-mine-shaft-200 [&_p]:text-justify "
+        className="[&_h4]:text-xl [&_*]:text-mine-shaft-300 [&_li]:marker:text-bright-sun-400 [&_li]:mb-1 [&_h4]:my-5 [&_h4]:font-semibold [&_h4]:text-mine-shaft-200 [&_p]:text-justify xs-mx:[&_p]:text-xs xs-mx:[&_li]:text-sm"
         dangerouslySetInnerHTML={{ __html: data }}
       ></div>
       <Divider my="xl" />
       <div>
         <div className="text-xl font-semibold mb-5">About Company</div>
-        <div className="flex justify-between mb-3 ">
+        <div className="flex justify-between mb-3 xs-mx:flex-wrap xs-mx:gap-2">
           <div className="flex gap-2 items-center">
             <div className="p-3 bg-mine-shaft-800 rounded-xl ">
               <img className="h-8" src={`/Icons/${props.company}.png`} alt="" />
@@ -184,7 +184,7 @@ const JobDesc = (props: any) => {
             </Button>
           </Link>
         </div>
-        <div className="text-mine-shaft-300 text-justify">
+        <div className="text-mine-shaft-300 text-justify xs-mx:text-sm ">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo corrupti
           sapiente mollitia quisquam quidem. Totam nihil provident soluta?
           Aspernatur, error atque autem commodi voluptatem illo quas
