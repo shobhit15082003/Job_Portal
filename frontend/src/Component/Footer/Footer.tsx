@@ -13,8 +13,8 @@ const Footer = () => {
     const location =useLocation();
   return (
     location.pathname!="/signup" && location.pathname!="/login" ?
-    <div className="pt-20 pb-5 flex gap-5 justify-around bg-mine-shaft-950 font-['poppins]">
-      <div className="w-1/4 flex flex-col gap-4 ">
+    <div className="pt-20 pb-5 p-4 flex gap-8 justify-around bg-mine-shaft-950 font-['poppins] flex-wrap">
+      <div className="w-1/4 sm-mx:w-1/3 xs-mx:w-1/2 xsm-mx:w-full  flex flex-col gap-4 ">
         <div className="flex gap-1 items-center text-bright-sun-400">
           <IconAnchor className="h-6 w-6" stroke={2.5} />
           <div className="text-xl font-semibold">JobHook</div>

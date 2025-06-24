@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Combobox, useCombobox } from "@mantine/core";
+import { ActionIcon, Combobox, useCombobox } from "@mantine/core";
 import { IconAdjustments } from "@tabler/icons-react";
 import { useDispatch } from "react-redux";
 import { updateSort } from "../../Slices/SortSlice";
@@ -50,10 +50,19 @@ const Sort = (props: any) => {
       <Combobox.Target>
         <div
           onClick={() => combobox.toggleDropdown()}
-          className="cursor-pointer border gap-2 text-sm border-bright-sun-400 flex items-center px-3 py-1.5 rounded-xl"
+          className="cursor-pointer hover:bg-mine-shaft-900 border gap-2 text-sm xs-mx:text-xs border-bright-sun-400 flex items-center px-3 xs-mx:px-1 py-1.5 xs-mx:py-0 pr-1 rounded-xl xsm-mx:mt-2 "
         >
           {selectedItem}
-          <IconAdjustments className="h-4 w-4 text-bright-sun-400" />
+          <ActionIcon
+            color="brightSun.4"
+            variant="transparent"
+            aria-label="Settings"
+          >
+            <IconAdjustments
+              style={{ width: "70%", height: "70%" }}
+              stroke={1.5}
+            />
+          </ActionIcon>
         </div>
       </Combobox.Target>
 
