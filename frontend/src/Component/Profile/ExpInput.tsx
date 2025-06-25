@@ -80,7 +80,7 @@ const ExpInput = (props: any) => {
       <div className="text-lg font-semibold ">
         {props.add ? "Add" : "Edit"} Experience
       </div>
-      <div className="flex gap-10 [&>*]:w-1/2">
+      <div className="flex gap-10 md-mx:gap-5  [&>*]:w-1/2 sm-mx:[&>*]:w-full xs-mx:w-full xs-mx:flex-wrap">
         <SelectInput form={form} name="title" {...select[0]} />
         <SelectInput form={form} name="company" {...select[1]} />
       </div>
@@ -95,7 +95,7 @@ const ExpInput = (props: any) => {
         withAsterisk
         // onChange={(event) => setDesc(event.currentTarget.value)}
       />
-      <div className="flex gap-10 [&>*]:w-1/2">
+      <div className="flex gap-10 md-mx:gap-5  [&>*]:w-1/2 sm-mx:[&>*]:w-full xs-mx:w-full xs-mx:flex-wrap">
         <MonthPickerInput
           {...form.getInputProps("startDate")}
           placeholder="Pick date"
