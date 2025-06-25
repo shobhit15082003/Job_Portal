@@ -40,16 +40,20 @@ const Header = () => {
   }, [navigate]);
   useEffect(() => {
     if (token != "") {
-      const decoded = jwtDecode(token);
-      dispatch(setUser({ ...decoded, email: decoded.sub }));
+      if (localStorage.getItem("token") != "") {
+        const decoded = jwtDecode(localStorage.getItem("token") || "");
+        dispatch(setUser({ ...decoded, email: decoded.sub }));
+      }
     }
-    getProfile(user?.profileId) //changed from user?.id
-      .then((data: any) => {
-        dispatch(setProfile(data));
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    if (user?.profileId) {
+      getProfile(user?.profileId) //changed from user?.id
+        .then((data: any) => {
+          dispatch(setProfile(data));
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
   }, [token, navigate]); //changed from [user]
 
   return location.pathname != "/signup" && location.pathname != "/login" ? (
@@ -74,7 +78,12 @@ const Header = () => {
         </div> */}
         {user ? <NotiMenu /> : <></>}
         {}
-        <Burger className="bs:hidden " opened={opened} onClick={open} aria-label="Toggle navigation" />
+        <Burger
+          className="bs:hidden "
+          opened={opened}
+          onClick={open}
+          aria-label="Toggle navigation"
+        />
         <Drawer
           overlayProps={{ backgroundOpacity: 0.5, blur: 4 }}
           position="right"
@@ -85,10 +94,12 @@ const Header = () => {
         >
           <div className="flex flex-col gap-5 items-center ">
             {links.map((link, index) => (
-              <div
-                className={` h-full flex gap-6 items-center`}
-              >
-                <Link className="hover:text-bright-sun-400 text-xl" key={index} to={link.url}>
+              <div className={` h-full flex gap-6 items-center`}>
+                <Link
+                  className="hover:text-bright-sun-400 text-xl"
+                  key={index}
+                  to={link.url}
+                >
                   {link.name}
                 </Link>
               </div>

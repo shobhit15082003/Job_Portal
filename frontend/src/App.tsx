@@ -40,6 +40,7 @@ function AppContent() {
       <Header />
       {!isSignupPage && <Divider size="xs" />}
       <Routes>
+        <Route path="/" element={<HomePage />} />
         <Route path="/find-jobs" element={<FindJobs />} />
         <Route path="/find-talent" element={<FindTalentPage />} />
         <Route path="/talent-profile/:id" element={<TalentProfilePage />} />
@@ -50,7 +51,7 @@ function AppContent() {
         <Route path="/posted-job/:id" element={<ProtectedRoute allowedRoles={['EMPLOYER']}><PostedJobPage /></ProtectedRoute>} />
         <Route path="/job-history" element={<ProtectedRoute allowedRoles={['EMPLOYER']}><JobHistoryPage /></ProtectedRoute>} />
         <Route path="/signup" element={<PublicRoute><SignupPage /></PublicRoute>} />
-        <Route path="/login" element={ <SignupPage />} />
+        <Route path="/login" element={<PublicRoute><SignupPage /></PublicRoute>} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="*" element={<HomePage />} />
       </Routes>
