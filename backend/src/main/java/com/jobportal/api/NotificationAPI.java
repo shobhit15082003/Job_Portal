@@ -26,12 +26,12 @@ public class NotificationAPI {
     private NotificationService notificationService;
 
     @GetMapping("/get/{userId}")
-    public ResponseEntity<List<Notification>>getNotification(@PathVariable Long userid){
-        return new ResponseEntity<>(notificationService.getUnreadNotifications(userid), HttpStatus.OK);
+    public ResponseEntity<List<Notification>>getNotification(@PathVariable Long userId){
+        return new ResponseEntity<>(notificationService.getUnreadNotifications(userId), HttpStatus.OK);
     }
 
     @PutMapping("/read/{id}")
-    public ResponseEntity<ResponseDTO>readNotificaion(@PathVariable Long id) throws JobPortalException {
+    public ResponseEntity<ResponseDTO> readNotification(@PathVariable Long id) throws JobPortalException {
         notificationService.readNotification(id);
         return  new ResponseEntity<>(new ResponseDTO("Success"),HttpStatus.OK);
     }

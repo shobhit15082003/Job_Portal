@@ -15,13 +15,14 @@ const Skills = () => {
   const handleClick = () => {
     if (!edit) {
       setEdit(true);
-      setSkills(profile.skills);
+       setSkills(Array.isArray(profile.skills) ? profile.skills : []);
     } else {
       setEdit(false);
     }
   };
   const handleSave = () => {
     setEdit(false);
+    console.log(profile);
     let updatedProfile = { ...profile, skills: skills };
     dispatch(changeProfile(updatedProfile));
     console.log(updatedProfile);

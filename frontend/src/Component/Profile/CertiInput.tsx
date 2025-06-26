@@ -36,7 +36,7 @@ const CertiInput = (props: any) => {
   const handleSave = () => {
     form.validate();
     if (!form.isValid()) return;
-    let certi = [...profile.certifications];
+    let certi = [...(Array.isArray(profile.certifications) ? profile.certifications : [])];
     certi.push(form.getValues());
     certi[certi.length - 1].issueDate =
       certi[certi.length - 1].issueDate.toISOString();

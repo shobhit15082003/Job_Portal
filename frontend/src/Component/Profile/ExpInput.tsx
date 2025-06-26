@@ -56,7 +56,7 @@ const ExpInput = (props: any) => {
     if (!form.isValid()) {
       return;
     }
-    let exp = [...profile.experiences];
+    let exp = [...(Array.isArray(profile.experiences) ? profile.experiences : [])];
     if(props.add){
       exp.push(form.getValues());
       exp[exp.length-1].startDate=exp[exp.length-1].startDate.toISOString();
