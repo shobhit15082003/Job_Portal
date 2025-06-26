@@ -49,11 +49,11 @@ const Info = () => {
       console.log(updatedProfile);
       successNotification("Success", "Profile Updated Successfully.");
   }
-
   return (
     <>
       <div className="text-3xl xs-mx:text-2xl  font-semibold flex justify-between ">
         {user.name}
+       
         <div>
           {edit && <ActionIcon
             onClick={handleSave}
