@@ -41,18 +41,15 @@ function AppContent() {
       {!isSignupPage && <Divider size="xs" />}
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/find-jobs" element={<FindJobs />} />
-        <Route path="/find-talent" element={<FindTalentPage />} />
-        <Route path="/talent-profile/:id" element={<TalentProfilePage />} />
-        {/* <Route path="/post-job/:id" element={<ProtectedRoute allowedRoles={['APPLICANT']}><PostJobPage /></ProtectedRoute>} /> */}
-        <Route path="/post-job/:id" element={<PostJobPage />} />
-        <Route path="/jobs/:id" element={<JobDescPage />} />
-        <Route path="/apply-job/:id" element={<ApplyJobPage />} />
-        <Route path="/company/:name" element={<CompanyPage />} />
-        {/* <Route path="/posted-job/:id" element={<ProtectedRoute allowedRoles={['EMPLOYER']}><PostedJobPage /></ProtectedRoute>} /> */}
-        <Route path="/posted-job/:id" element={<PostedJobPage />} />
-        {/* <Route path="/job-history" element={<ProtectedRoute allowedRoles={['EMPLOYER']}><JobHistoryPage /></ProtectedRoute>} /> */}
-        <Route path="/job-history" element={<JobHistoryPage />} />
+        <Route path="/find-jobs" element={<ProtectedRoute allowedRoles={['APPLICANT']}><FindJobs /></ProtectedRoute>} />
+        <Route path="/find-talent" element={<ProtectedRoute allowedRoles={['EMPLOYER']}><FindTalentPage /></ProtectedRoute>} />
+        <Route path="/talent-profile/:id" element={<ProtectedRoute allowedRoles={['EMPLOYER']}><TalentProfilePage /></ProtectedRoute>} />
+        <Route path="/post-job/:id" element={<ProtectedRoute allowedRoles={['EMPLOYER']}><PostJobPage /></ProtectedRoute>} />
+        <Route path="/jobs/:id" element={<PublicRoute><JobDescPage /></PublicRoute>} />
+        <Route path="/apply-job/:id" element={<ProtectedRoute allowedRoles={['EMPLOYER']}><ApplyJobPage /></ProtectedRoute>} />
+        <Route path="/company/:name" element={<PublicRoute><CompanyPage /></PublicRoute>} />
+        <Route path="/posted-job/:id" element={<ProtectedRoute allowedRoles={['EMPLOYER']}><PostedJobPage /></ProtectedRoute>} />
+        <Route path="/job-history" element={<ProtectedRoute allowedRoles={['APPLICANT']}><JobHistoryPage /></ProtectedRoute>} />
         <Route path="/signup" element={<PublicRoute><SignupPage /></PublicRoute>} />
         <Route path="/login" element={<PublicRoute><SignupPage /></PublicRoute>} />
         <Route path="/profile" element={<ProfilePage />} />
