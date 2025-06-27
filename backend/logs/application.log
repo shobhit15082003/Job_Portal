@@ -11470,3 +11470,967 @@ io.jsonwebtoken.security.SignatureException: JWT signature does not match locall
 2025-06-27 19:25:36 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
 2025-06-27 19:25:36 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
 2025-06-27 19:25:36 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:34:30 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /auth/login
+2025-06-27 19:34:30 [http-nio-8080-exec-3] WARN  c.j.jwt.JwtAuthenticationFilter - Authorization header is missing or doesn't start with Bearer
+2025-06-27 19:34:30 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /auth/login
+2025-06-27 19:34:30 [http-nio-8080-exec-3] INFO  com.jobportal.jwt.JWTHelper - Generating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:30 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:34:30 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:30 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:30 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:30 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:30 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:34:31 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:34:31 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:34:31 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:31 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:31 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:31 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:31 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:31 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:31 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:31 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:34:31 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:31 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:34:31 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:34:31 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:31 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:31 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:31 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:31 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:34:31 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:34:31 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:31 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:31 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:31 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:31 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:34:34 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /jobs/getAll
+2025-06-27 19:34:34 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:34:34 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:34 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:34 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:34:34 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:34 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:34 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:34 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:34 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:34 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:34 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:34 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:34 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:34:34 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:34 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:34:34 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:34 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /jobs/getAll
+2025-06-27 19:34:35 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /jobs/getAll
+2025-06-27 19:34:35 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:35 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:35 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:35 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:35 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /jobs/getAll
+2025-06-27 19:34:35 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:34:35 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:34:35 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:35 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:35 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:35 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:35 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:35 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:35 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:35 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:35 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:34:35 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:34:36 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:34:36 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /jobs/getAll
+2025-06-27 19:34:36 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:36 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:36 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:36 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:36 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:34:36 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:36 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:36 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:36 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:36 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:36 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:36 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /jobs/getAll
+2025-06-27 19:34:36 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:34:36 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:37 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:37 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:34:37 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /jobs/getAll
+2025-06-27 19:34:37 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:37 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:37 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:37 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:37 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /jobs/getAll
+2025-06-27 19:34:54 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:34:54 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:34:54 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:54 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:54 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:54 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:54 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:54 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:54 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:54 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:34:54 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:54 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:34:55 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:34:55 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:34:55 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:55 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:55 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:55 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:55 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:55 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:55 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:55 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:34:55 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:55 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:34:57 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:34:57 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:57 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:57 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/getAll
+2025-06-27 19:34:57 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:57 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:57 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:57 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:57 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:34:57 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:57 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:57 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/getAll
+2025-06-27 19:34:57 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/getAll
+2025-06-27 19:34:57 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:34:57 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:34:57 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:57 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:34:57 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/getAll
+2025-06-27 19:35:30 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:35:30 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:35:30 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/getAll
+2025-06-27 19:35:30 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:35:30 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:35:30 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/getAll
+2025-06-27 19:35:30 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:35:30 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:35:30 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/getAll
+2025-06-27 19:35:30 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:35:30 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:35:30 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:30 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/getAll
+2025-06-27 19:35:47 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:35:47 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:35:47 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:47 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:47 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:47 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:47 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:47 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:47 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:47 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:35:47 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:47 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:35:47 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:35:47 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:35:47 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:47 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:47 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:47 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:47 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:47 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:47 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:47 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:47 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:35:47 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:35:47 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:35:47 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:47 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:47 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:47 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:47 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:35:48 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:35:48 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:35:48 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:48 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:48 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:48 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:48 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:48 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:48 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:48 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:48 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:35:48 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:35:51 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:35:51 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:35:51 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:51 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:51 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:51 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:51 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:51 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:51 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:51 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:51 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:35:51 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:35:51 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:35:51 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:35:51 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:51 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:51 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:51 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:51 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:51 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:51 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:51 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:51 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:35:51 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:35:53 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:35:53 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:35:53 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:53 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:53 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:53 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:53 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:53 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:53 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:53 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:53 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:35:53 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:35:53 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:35:53 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:35:53 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:53 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:53 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:53 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:53 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:53 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:53 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:53 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:35:53 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:53 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:35:55 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:35:55 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:35:55 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:55 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:55 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:55 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:55 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:55 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:55 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:55 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:55 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:35:55 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:35:55 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:35:55 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:35:55 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:55 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:55 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:35:55 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:35:55 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:55 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:55 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:35:55 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:55 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:35:55 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:36:02 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:36:02 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:36:02 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:02 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:02 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:02 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:02 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:02 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:02 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:02 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:36:02 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:02 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:36:03 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:36:03 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:36:03 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:03 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:03 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:03 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:03 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:03 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:03 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:03 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:03 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:36:03 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:36:23 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:36:23 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:36:23 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:23 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:23 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:23 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:23 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:23 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:23 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:23 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:36:23 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:23 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:36:24 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:36:24 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:36:24 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:24 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:24 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:24 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:24 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:24 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:24 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:24 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:36:24 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:24 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:36:26 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:36:26 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:36:26 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:26 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:26 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:26 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:26 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:26 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:26 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:26 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:36:26 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:26 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:36:26 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:36:26 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:36:26 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:26 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:26 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:26 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:26 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:26 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:26 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:26 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:26 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:36:26 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:36:37 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:36:37 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:36:37 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:37 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:37 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:37 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:37 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:37 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:37 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:37 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:36:37 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:37 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:36:37 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:36:37 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:36:37 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:37 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:37 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:37 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:37 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:37 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:37 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:37 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:36:37 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:37 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:36:38 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:36:38 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:36:38 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:38 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:38 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:38 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:38 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:38 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:38 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:38 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:36:38 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:38 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:36:38 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:36:38 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:36:38 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:38 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:38 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:38 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:38 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:38 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:38 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:38 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:36:38 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:38 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:36:39 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:36:39 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:36:39 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:39 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:39 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:39 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:39 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:39 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:39 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:39 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:36:39 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:39 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:36:39 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:36:39 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:36:39 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:39 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:39 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:39 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:39 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:39 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:39 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:39 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:39 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:36:39 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:36:42 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:36:42 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:36:42 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:42 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:42 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:42 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:42 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:42 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:42 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:42 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:42 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:36:42 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:36:42 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:36:42 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:36:42 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:42 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:42 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:42 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:42 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:42 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:42 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:42 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:36:42 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:42 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:36:42 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:36:42 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:42 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:42 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:42 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:42 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:36:44 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:36:44 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:36:44 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:44 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:44 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:44 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:44 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:44 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:44 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:44 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:44 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:36:44 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:36:44 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:36:44 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:36:44 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:44 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:44 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:44 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:44 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:44 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:44 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:44 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:36:44 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:44 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:36:46 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:36:46 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:46 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:46 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:36:46 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /jobs/getAll
+2025-06-27 19:36:46 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:46 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:46 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:46 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:46 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:46 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:46 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:36:46 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:46 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:46 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:46 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /jobs/getAll
+2025-06-27 19:36:46 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:46 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:36:46 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /jobs/getAll
+2025-06-27 19:36:46 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:36:46 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:36:46 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:46 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:36:46 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /jobs/getAll
+2025-06-27 19:37:46 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:37:46 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:37:46 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:37:46 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:37:46 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:37:46 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:37:46 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:37:46 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:37:46 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:37:46 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:37:46 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:37:46 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:39:38 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:39:38 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:39:38 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:39:38 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:39:38 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:39:38 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:39:38 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:39:38 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:39:38 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:39:38 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:39:38 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:39:38 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:39:38 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:39:38 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:39:38 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:39:38 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:39:38 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:39:38 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:39:38 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:39:38 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:39:38 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:39:38 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:39:38 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:39:38 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:39:39 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:39:39 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:39:39 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:39:39 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:39:39 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:39:39 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:39:39 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:39:39 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:39:39 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:39:39 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:39:39 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:39:39 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:39:39 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:39:39 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:39:39 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:39:39 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:39:39 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:39:39 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:39:40 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:39:40 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:39:40 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:39:40 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:39:40 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:39:40 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:40:30 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:40:30 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:40:30 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:30 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:30 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:30 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:30 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:30 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:30 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:30 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:30 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:40:30 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:40:30 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:40:30 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:40:30 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:30 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:30 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:30 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:30 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:30 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:30 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:40:30 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:30 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:30 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:40:31 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:40:31 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:40:31 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:31 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:31 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:31 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:31 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:31 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:31 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:31 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:40:31 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:31 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:40:31 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:40:31 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:40:31 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:31 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:31 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:31 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:31 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:31 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:31 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:31 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:31 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:40:31 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:40:32 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:40:32 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:40:32 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:32 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:32 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:32 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:32 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:32 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:32 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:32 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:40:32 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:32 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:40:32 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:40:32 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:40:32 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:32 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:32 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:32 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:32 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:32 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:32 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:40:32 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:32 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:32 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:40:34 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:40:34 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:40:34 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:34 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:34 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:34 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:34 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:34 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:34 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:34 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:40:34 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:34 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:40:35 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:40:35 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:40:35 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:35 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:35 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:35 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:35 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:35 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:35 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:40:35 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:35 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:35 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:40:36 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:40:36 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:40:36 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:36 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:36 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:36 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:36 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:36 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:36 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:36 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:40:36 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:36 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:40:36 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:40:36 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:40:36 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:36 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:36 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:36 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:36 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:36 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:36 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:36 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:40:36 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:36 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:40:37 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:40:37 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:40:37 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:37 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:37 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:37 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:37 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:37 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:37 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:37 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:40:37 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:37 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:40:37 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:40:37 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:40:37 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:37 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:37 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:37 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:37 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:37 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:37 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:37 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:40:37 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:37 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:40:38 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:40:38 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:40:38 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:40:38 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:40:38 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:40:38 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:40:38 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:40:38 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:40:38 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:40:38 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:40:38 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:40:38 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:38 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:40:39 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:40:39 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:40:39 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:40:39 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:40:39 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:40:39 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:40:39 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:40:39 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:40:39 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:40:39 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:40:39 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:40:39 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:40:39 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:41:51 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:41:51 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:41:51 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:41:51 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:41:51 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:41:51 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:41:51 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:41:51 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:41:51 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:41:51 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:41:51 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:41:51 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:41:51 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:41:51 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:41:51 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:41:51 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:41:51 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:41:51 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:41:51 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:41:51 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:41:51 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:41:51 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:41:51 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:41:51 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:42:56 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:42:56 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /jobs/getAll
+2025-06-27 19:42:56 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:42:56 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:42:56 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:42:56 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:42:56 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:42:56 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:42:56 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:42:56 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:42:56 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:42:56 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:42:56 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:42:56 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:42:56 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /jobs/getAll
+2025-06-27 19:42:56 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:42:56 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:42:56 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:42:56 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /jobs/getAll
+2025-06-27 19:42:56 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:42:56 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:42:56 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:42:56 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:42:56 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /jobs/getAll
+2025-06-27 19:43:03 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /jobs/getAll
+2025-06-27 19:43:03 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:43:03 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:03 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:03 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:03 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:03 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:43:03 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:03 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:03 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:03 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:03 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:03 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:03 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:43:03 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /jobs/getAll
+2025-06-27 19:43:03 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:03 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:03 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:43:03 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /jobs/getAll
+2025-06-27 19:43:03 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:03 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:03 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:03 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:03 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /jobs/getAll
+2025-06-27 19:43:05 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /jobs/getAll
+2025-06-27 19:43:05 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:43:05 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:43:05 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:05 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:05 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:05 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:05 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:05 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:05 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:05 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:05 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:05 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:05 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:43:05 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:05 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:05 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /jobs/getAll
+2025-06-27 19:43:05 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:43:05 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /jobs/getAll
+2025-06-27 19:43:05 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:05 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:05 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:05 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:05 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /jobs/getAll
+2025-06-27 19:43:07 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:43:07 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:07 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:07 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:43:07 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:07 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:07 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:07 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:07 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:07 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:43:07 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:07 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:43:07 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:43:07 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:43:07 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:07 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:07 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:07 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:07 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:07 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:07 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:07 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:07 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:43:07 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:43:08 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:43:08 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:43:08 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:08 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:08 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:08 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:08 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:08 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:08 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:08 [http-nio-8080-exec-9] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:43:08 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:08 [http-nio-8080-exec-6] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:43:11 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:43:11 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:43:11 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:11 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:11 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:11 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:11 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:11 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:11 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:11 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:11 [http-nio-8080-exec-3] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:43:11 [http-nio-8080-exec-10] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:43:12 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:43:12 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:43:12 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:12 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:12 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:12 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:12 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:12 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:12 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:12 [http-nio-8080-exec-5] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:43:12 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:12 [http-nio-8080-exec-1] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:43:13 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:43:13 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:43:13 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:13 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:13 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:13 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:13 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:13 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:13 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:13 [http-nio-8080-exec-2] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:43:13 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:13 [http-nio-8080-exec-4] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
+2025-06-27 19:43:38 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /profiles/get/3
+2025-06-27 19:43:38 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - ===> Starting JWT filter for request: /notification/get/3
+2025-06-27 19:43:38 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:38 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:38 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Username extracted from token: shobhitbtech1508@gmail.com
+2025-06-27 19:43:38 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Fetching user details for username: shobhitbtech1508@gmail.com
+2025-06-27 19:43:38 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:38 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Validating token for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:38 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:38 [http-nio-8080-exec-8] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /notification/get/3
+2025-06-27 19:43:38 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - Token is valid. Setting authentication for user: shobhitbtech1508@gmail.com
+2025-06-27 19:43:38 [http-nio-8080-exec-7] INFO  c.j.jwt.JwtAuthenticationFilter - <=== Continuing filter chain for request: /profiles/get/3
