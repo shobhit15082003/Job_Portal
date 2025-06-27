@@ -73,7 +73,8 @@ const PostJob = () => {
       })
       .catch((err) => {
         console.log(err);
-        errorNotification("Failed", err.response.data.errorMessage);
+        errorNotification("Failed", err?.response?.data?.errorMessage || err.message || "Something went wrong");
+
       });
   };
   const handleDraft = () => {
@@ -84,7 +85,8 @@ const PostJob = () => {
       })
       .catch((err) => {
         console.log(err);
-        errorNotification("Failed", err.response.data.errorMessage);
+        // errorNotification("Failed", err.response.data.errorMessage);
+        errorNotification("Failed", err);
       });
   };
   // const matches=useMediaQuery('(min-width:350px)');

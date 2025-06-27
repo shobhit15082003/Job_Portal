@@ -44,12 +44,15 @@ function AppContent() {
         <Route path="/find-jobs" element={<FindJobs />} />
         <Route path="/find-talent" element={<FindTalentPage />} />
         <Route path="/talent-profile/:id" element={<TalentProfilePage />} />
-        <Route path="/post-job/:id" element={<ProtectedRoute allowedRoles={['APPLICANT']}><PostJobPage /></ProtectedRoute>} />
+        {/* <Route path="/post-job/:id" element={<ProtectedRoute allowedRoles={['APPLICANT']}><PostJobPage /></ProtectedRoute>} /> */}
+        <Route path="/post-job/:id" element={<PostJobPage />} />
         <Route path="/jobs/:id" element={<JobDescPage />} />
         <Route path="/apply-job/:id" element={<ApplyJobPage />} />
         <Route path="/company/:name" element={<CompanyPage />} />
-        <Route path="/posted-job/:id" element={<ProtectedRoute allowedRoles={['EMPLOYER']}><PostedJobPage /></ProtectedRoute>} />
-        <Route path="/job-history" element={<ProtectedRoute allowedRoles={['EMPLOYER']}><JobHistoryPage /></ProtectedRoute>} />
+        {/* <Route path="/posted-job/:id" element={<ProtectedRoute allowedRoles={['EMPLOYER']}><PostedJobPage /></ProtectedRoute>} /> */}
+        <Route path="/posted-job/:id" element={<PostedJobPage />} />
+        {/* <Route path="/job-history" element={<ProtectedRoute allowedRoles={['EMPLOYER']}><JobHistoryPage /></ProtectedRoute>} /> */}
+        <Route path="/job-history" element={<JobHistoryPage />} />
         <Route path="/signup" element={<PublicRoute><SignupPage /></PublicRoute>} />
         <Route path="/login" element={<PublicRoute><SignupPage /></PublicRoute>} />
         <Route path="/profile" element={<ProfilePage />} />

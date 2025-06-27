@@ -52,7 +52,7 @@ const Info = () => {
   return (
     <>
       <div className="text-3xl xs-mx:text-2xl  font-semibold flex justify-between ">
-        {user.name}
+        {user?.name}
        
         <div>
           {edit && <ActionIcon
