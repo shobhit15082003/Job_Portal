@@ -115,7 +115,7 @@ const Signup = () => {
         overlayProps={{ radius: "sm", blur: 2 }}
         loaderProps={{ color: "brightSun.4", type: "bars" }}
       />
-      <div className="w-1/2 px-20 flex flex-col justify-center gap-3 ">
+      <div className="w-1/2 sm-mx:w-full sm-mx:py-20 px-20 bs-mx:px-10 md-mx:px-5 flex flex-col justify-center gap-3 ">
         <div className="text-2xl font-semibold ">Create Account</div>
         <TextInput
           value={data.name}
@@ -163,20 +163,20 @@ const Signup = () => {
           description="This is anonymous"
           withAsterisk
         >
-          <Group mt="xs">
+          <div className="flex gap-6 xs-mx:gap-3">
             <Radio
-              className="py-4 px-6 border border-mine-shaft-800 rounded-lg has-[:checked]:border-bright-sun-400 hover:bg-mine-shaft-900 has-[checked]:bg-mine-shaft-400/5"
+              className="py-4 px-6 sm-mx:px-4 sm-mx:py-2 border border-mine-shaft-800 rounded-lg has-[:checked]:border-bright-sun-400 hover:bg-mine-shaft-900 has-[checked]:bg-mine-shaft-400/5"
               autoContrast
               value="APPLICANT"
               label="Applicant"
             />
             <Radio
-              className="py-4 px-6 border border-mine-shaft-800 rounded-lg has-[:checked]:border-bright-sun-400 hover:bg-mine-shaft-900 has-[checked]:bg-mine-shaft-400/5"
+              className="py-4 px-6 sm-mx:px-4 sm-mx:py-2 border border-mine-shaft-800 rounded-lg has-[:checked]:border-bright-sun-400 hover:bg-mine-shaft-900 has-[checked]:bg-mine-shaft-400/5"
               autoContrast
               value="EMPLOYER"
               label="Employer"
             />
-          </Group>
+          </div>
         </Radio.Group>
         <Checkbox
           autoContrast
@@ -194,7 +194,7 @@ const Signup = () => {
         >
           Sign up
         </Button>
-        <div className="mx-auto">
+        <div className="text-center mx-auto sm-mx:text-sm xs-mx:text-xs">
           Have an account?{" "}
           <span
             onClick={() => {
@@ -202,7 +202,7 @@ const Signup = () => {
               setData(form);
               setFormError(form);
             }}
-            className="text-bright-sun-400 hover:underline cursor-pointer"
+            className="text-bright-sun-400 hover:underline cursor-pointer sm-mx:text-sm xs-mx:text-xs"
           >
             Login
           </span>

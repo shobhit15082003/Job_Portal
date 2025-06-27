@@ -4,19 +4,35 @@ import { error } from "console";
 const axiosInstance=axios.create({
     baseURL:'http://localhost:8080'
 });
+  
 
+// axiosInstance.interceptors.request.use(
+//     (config:InternalAxiosRequestConfig)=>{
+//         const token=localStorage.getItem('token');
+//         if(token){
+//             config.headers.Authorization=`Bearer ${token}`;
+//         }
+//         console.log("hello I am inside axiosInterceptor");
+//         console.log(config);
+//         return config;
+//     },
+//     (error)=>{
+//         return Promise.reject(error);
+//     }
+// )
 axiosInstance.interceptors.request.use(
-    (config:InternalAxiosRequestConfig)=>{
-        const token=localStorage.getItem('token');
-        if(token){
-            config.headers.Authorization=`Bearer ${token}`;
+    (config) => {
+        const token = localStorage.getItem('token');
+       
+        if (token) {
+            config.headers.Authorization = `Bearer ${token}`;
+        } else {
+            console.warn("⚠️ No token found in localStorage");
         }
         return config;
     },
-    (error)=>{
-        return Promise.reject(error);
-    }
-)
+    (error) => Promise.reject(error)
+);
 
 export const setupResponseInterceptor=(navigate:any)=>{
     axiosInstance.interceptors.response.use(

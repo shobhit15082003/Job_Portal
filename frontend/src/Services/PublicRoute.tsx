@@ -8,9 +8,9 @@ interface PublicRouteProps {
 const PublicRoute: React.FC<PublicRouteProps> = ({ children }) => {
   const token = useSelector((state: any) => state.jwt);
   if (token) {
-    return <Navigate to="/" />;
+    return <Navigate to="/" replace/>;
   }
-  return children;
+  return <>{children}</>;
 };
 
 export default PublicRoute;

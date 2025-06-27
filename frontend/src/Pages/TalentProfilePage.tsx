@@ -29,7 +29,7 @@ const TalentProfilePage = () => {
         Back
       </Button>
 
-      <div className="flex gap-5 ">
+      <div className="flex gap-5 lg-mx:flex-wrap ">
         <Profile {...profile} />
         <RecommendTalent talents={talents} />
       </div>

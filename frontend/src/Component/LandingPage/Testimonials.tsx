@@ -5,17 +5,17 @@ import { testimonials } from "../../Data/Data";
 
 const Testimonials = () => {
   return (
-    <div className="mt-20 pb-5 ">
-      <div className="text-4xl font-semibold text-center text-mine-shaft-100 mb-3">
+    <div className="mt-20 pb-5 p-5">
+      <div className="text-4xl md-mx:text-3xl sm-mx:text-2xl xs-mx:text-xl font-semibold text-center text-mine-shaft-100 mb-3">
         What <span className="text-bright-sun-400">User </span> says about us?
       </div>
-      <div className="flex justify-evenly ">
+      <div className="flex md-mx:flex-wrap justify-evenly mt-10 gap-5">
         {testimonials.map((data, index) => (
-          <div key={index} className="flex flex-col gap-3 w-[23%] border border-bright-sun-400 p-3 rounded-xl mt-10 ">
+          <div key={index} className="flex flex-col gap-3 w-[23%] md-mx:w-[48%] xs-mx:w-full border border-bright-sun-400 p-3 rounded-xl ">
             <div className="flex gap-2 items-center ">
               <Avatar className="!h-14 !w-14" src={avatar9} alt="it's me" />
               <div>
-                <div className="text-lg text-mine-shaft-100 font-semibold ">
+                <div className="text-lg sm-mx:text-base xs-mx:text-xs text-mine-shaft-100 font-semibold ">
                   {data.name}
                 </div>
                 <Rating value={data.rating} fractions={2} readOnly />

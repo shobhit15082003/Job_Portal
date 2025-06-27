@@ -90,7 +90,7 @@ const Login = () => {
         overlayProps={{ radius: "sm", blur: 2 }}
         loaderProps={{ color: "brightSun.4", type: "bars" }}
       />
-      <div className="w-1/2 px-20 flex flex-col justify-center gap-3 ">
+      <div className="w-1/2 sm-mx:w-full px-20 bs-mx:px-10 md-mx:px-5 flex flex-col justify-center gap-3 ">
         <div className="text-2xl font-semibold ">Create Account</div>
         <TextInput
           value={data.email}
@@ -120,7 +120,7 @@ const Login = () => {
         >
           Sign up
         </Button>
-        <div className="mx-auto">
+        <div className="mx-auto sm-mx:text-sm xs-mx:text-xs">
           Don't have an account?
           <span
             onClick={() => {
@@ -128,14 +128,14 @@ const Login = () => {
               setData(form);
               setFormError(form);
             }}
-            className="text-bright-sun-400 hover:underline cursor-pointer"
+            className="text-bright-sun-400 hover:underline cursor-pointer "
           >
             SignUp
           </span>
         </div>
         <div
           onClick={open}
-          className="text-bright-sun-400 hover:underline cursor-pointer text-center "
+          className="text-bright-sun-400 hover:underline cursor-pointer text-center sm-mx:text-sm xs-mx:text-xs"
         >
           Forget Password?
         </div>

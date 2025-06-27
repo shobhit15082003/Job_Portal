@@ -8,11 +8,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { changeProfile } from "../../Slices/ProfileSlice";
 import { successNotification } from "../../Services/NotificationService";
 import SelectInput from "./SelectInput";
+import { useMediaQuery } from "@mantine/hooks";
 
 const CertiInput = (props: any) => {
   const select = fields;
   const profile = useSelector((state: any) => state.profile);
   const dispatch = useDispatch();
+  const matches=useMediaQuery('(max-width:475px)');
 
   const form = useForm({
     mode: "controlled",
@@ -34,7 +36,7 @@ const CertiInput = (props: any) => {
   const handleSave = () => {
     form.validate();
     if (!form.isValid()) return;
-    let certi = [...profile.certifications];
+    let certi = [...(Array.isArray(profile.certifications) ? profile.certifications : [])];
     certi.push(form.getValues());
     certi[certi.length - 1].issueDate =
       certi[certi.length - 1].issueDate.toISOString();
@@ -48,7 +50,7 @@ const CertiInput = (props: any) => {
   return (
     <div className="flex flex-col gap-3">
       <div className="text-lg font-semibold">Add Certificate</div>
-      <div className="flex gap-10 [&>*]:w-1/2">
+      <div className="flex gap-10 [&>*]:w-1/2 md-mx:gap-5 xs-mx:[&>*]:w-full xs-mx:flex-wrap my-3">
         <TextInput
           {...form.getInputProps("name")}
           label="Title"
@@ -57,7 +59,7 @@ const CertiInput = (props: any) => {
         />
         <SelectInput form={form} name="issuer" {...select[1]} />
       </div>
-      <div className="flex gap-10 [&>*]:w-1/2">
+      <div className="flex gap-10 [&>*]:w-1/2 md-mx:gap-5 xs-mx:[&>*]:w-full xs-mx:flex-wrap my-3">
         <MonthPickerInput
           {...form.getInputProps("issueDate")}
           placeholder="Pick date"

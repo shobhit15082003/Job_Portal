@@ -69,11 +69,11 @@ const JobHistory = () => {
           value={activeTabs}
           onChange={handleTabChange}
         >
-          <Tabs.List className="[&_button]:!text-lg font-semibold mb-5  [&_button[data-active='true']]:text-bright-sun-400 ">
+          <Tabs.List className="[&_button]:!text-lg font-semibold mb-5  [&_button[data-active='true']]:text-bright-sun-400  [&_button[data-active='true']]:!border-b-mine-shaft-950 sm-mx:[&_button]:!text-lg xs-mx:[&_button]:!text-base xs-mx:[&_button]:!px-1.5 xs-mx:font-medium xs-mx:[&_button]:!py-2 xsm-mx:text-sm ">
             <Tabs.Tab value="APPLIED">Applied</Tabs.Tab>
             <Tabs.Tab value="SAVED">Saved</Tabs.Tab>
             <Tabs.Tab value="OFFERED">Offered</Tabs.Tab>
-            <Tabs.Tab value="INTERVIEWING">Interviewing</Tabs.Tab>
+            <Tabs.Tab value="INTERVIEWING">In Progress</Tabs.Tab>
           </Tabs.List>
 
           <Tabs.Panel value={activeTabs}>

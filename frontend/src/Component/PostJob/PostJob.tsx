@@ -12,6 +12,7 @@ import {
 } from "../../Services/NotificationService";
 import { useNavigate, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { useMediaQuery } from "@mantine/hooks";
 
 const PostJob = () => {
   const { id } = useParams();
@@ -72,7 +73,8 @@ const PostJob = () => {
       })
       .catch((err) => {
         console.log(err);
-        errorNotification("Failed", err.response.data.errorMessage);
+        errorNotification("Failed", err?.response?.data?.errorMessage || err.message || "Something went wrong");
+
       });
   };
   const handleDraft = () => {
@@ -83,22 +85,24 @@ const PostJob = () => {
       })
       .catch((err) => {
         console.log(err);
-        errorNotification("Failed", err.response.data.errorMessage);
+        // errorNotification("Failed", err.response.data.errorMessage);
+        errorNotification("Failed", err);
       });
   };
+  // const matches=useMediaQuery('(min-width:350px)');
   return (
-    <div className="w-4/5 mx-auto ">
+    <div className="w-4/5 mx-auto "> 
       <div className="text-2xl font-semibold mb-5">Post a Job</div>
       <div className="flex flex-col gap-5 ">
-        <div className="flex gap-10 [&>*]:w-1/2">
+        <div className="flex gap-10 md-mx:gap-5   [&>*]:w-1/2 sm-mx:[&>*]:!w-full sm-mx:flex-wrap ">
           <SelectInput form={form} name="jobTitle" {...select[0]} />
           <SelectInput form={form} name="company" {...select[1]} />
         </div>
-        <div className="flex gap-10 [&>*]:w-1/2">
+        <div className="flex gap-10 md-mx:gap-5 [&>*]:w-1/2 sm-mx:[&>*]:!w-full sm-mx:flex-wrap">
           <SelectInput form={form} name="experience" {...select[2]} />
           <SelectInput form={form} name="jobType" {...select[3]} />
         </div>
-        <div className="flex gap-10 [&>*]:w-1/2">
+        <div className="flex gap-10 md-mx:gap-5 [&>*]:w-1/2 sm-mx:[&>*]:!w-full sm-mx:flex-wrap">
           <SelectInput form={form} name="location" {...select[4]} />
           <NumberInput
             {...form.getInputProps("packageOffered")}

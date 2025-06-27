@@ -25,7 +25,7 @@ const JobCard = (props: any) => {
     dispatch(changeProfile(updatedProfile));
   };
   return (
-    <div className="bg-mine-shaft-900 p-4 w-72 flex flex-col gap-3 rounded-xl hover:shadow-[0_0_5px_1px_yellow] !shadow-bright-sun-400  ">
+    <div className="bg-mine-shaft-900 p-4 w-72 sm-mx:w-full flex flex-col gap-3 rounded-xl hover:shadow-[0_0_5px_1px_yellow] !shadow-bright-sun-400  ">
       <div className="flex justify-between ">
         <div className="flex gap-2 items-center">
           <div className="p-2 bg-mine-shaft-800 rounded-md ">
@@ -51,7 +51,7 @@ const JobCard = (props: any) => {
           />
         )}
       </div>
-      <div className="flex gap-2 [&>div]:py-1 [&>div]:px-2 [&>div]:bg-mine-shaft-800 [&>div]:text-bright-sun-400 [&>div]:rounded-lg text-xs">
+      <div className="flex gap-2 flex-wrap [&>div]:py-1 [&>div]:px-2 [&>div]:bg-mine-shaft-800 [&>div]:text-bright-sun-400 [&>div]:rounded-lg text-xs">
         <div>{props.experience}</div>
         <div>{props.jobType} </div>
         <div>{props.location}</div>
