@@ -46,14 +46,16 @@ npm install
 npm start
 ```
 
-📈 Highlights
+### 📈 Highlights
 🔐 40% fewer login issues with OTP + JWT
 📧 100% email delivery for interview alerts
 ⚡ Seamless experience across all user roles
 
-🤝 Contributing
+### 🤝 Contributing
 Pull requests are welcome! For major changes, open an issue first to discuss what you want to modify.
 
-👤 Author
-Shobhit Srivastava
-LinkedIn • Email
+## 👤 Author
+
+**Shobhit Srivastava**  
+🔗 [LinkedIn](https://www.linkedin.com/in/shobhit-srivastava-iiitbh/)  
+📧 [Email](mailto:shobhitsrivastava.iiitbh@gmail.com)
